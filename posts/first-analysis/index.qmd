@@ -1,0 +1,29 @@
+---
+title: "My First Python Analysis"
+date: "2026-04-11"
+categories: [python, data]
+description: "A simple data analysis using Python and matplotlib"
+---
+
+## Introduction
+
+This is my first Python analysis post!
+
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = {"Month": ["Jan","Feb","Mar","Apr"], 
+        "Value": [120, 145, 133, 160]}
+df = pd.DataFrame(data)
+
+fig, ax = plt.subplots(figsize=(7, 4))
+ax.bar(df["Month"], df["Value"], color="#2563eb")
+ax.set_title("My First Chart")
+plt.tight_layout()
+plt.show()
+```
+
+## Conclusion
+
+This is how easy it is to embed Python analysis in a blog post!

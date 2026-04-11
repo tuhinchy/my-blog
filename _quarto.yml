@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Tuhinur Rahman Chowdhury"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About
+      - href: blog.qmd
+        text: Blog
+
+format:
+  html:
+    theme: [flatly, custom.scss]
+    toc: true
+    code-fold: true
+    code-tools: true

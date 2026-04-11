@@ -1,0 +1,39 @@
+/*-- scss:defaults --*/
+$font-family-sans-serif: "Inter", sans-serif;
+$body-color: #1a1a1a;
+$link-color: #2563eb;
+$headings-font-weight: 600;
+
+/*-- scss:rules --*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.navbar {
+  border-bottom: 1px solid #e5e7eb;
+  background: white !important;
+}
+
+body {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+h1, h2, h3 {
+  margin-top: 2rem;
+  color: #111;
+}
+
+.profile-section {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+
+.profile-photo {
+  width: 160px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}

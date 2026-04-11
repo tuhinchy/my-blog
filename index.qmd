@@ -1,0 +1,25 @@
+---
+title: ""
+page-layout: full
+---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+<div class="profile-section">
+  <img src="profile.jpg" class="profile-photo">
+  <div>
+
+Tuhinur Rahman Chowdhury
+
+  Graduate Research Assistant| Graduate Part Time Instructor | Texas Tech University
+
+I am a PhD student in Agricultural and Applied Economics at Texas Tech University. My research centers on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis. In addition to my research, I serve as a Graduate Part-Time Instructor, teaching undergraduate statistics and helping students build a strong foundation in data analysis and statistical reasoning
+
+  **Email:** tuhchowd@ttu.edu
+
+  </div>
+</div>
+
+## Featured Posts
+
+Check out my latest Python analysis posts below.

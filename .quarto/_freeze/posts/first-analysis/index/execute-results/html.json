@@ -1,0 +1,12 @@
+{
+  "hash": "925f16fa5c309d89bc2061a057251d48",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"My First Python Analysis\"\ndate: \"2026-04-11\"\ncategories: [python, data]\ndescription: \"A simple data analysis using Python and matplotlib\"\n---\n\n## Introduction\n\nThis is my first Python analysis post!\n\n::: {#552dde49 .cell execution_count=1}\n``` {.python .cell-code}\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\ndata = {\"Month\": [\"Jan\",\"Feb\",\"Mar\",\"Apr\"], \n        \"Value\": [120, 145, 133, 160]}\ndf = pd.DataFrame(data)\n\nfig, ax = plt.subplots(figsize=(7, 4))\nax.bar(df[\"Month\"], df[\"Value\"], color=\"#2563eb\")\nax.set_title(\"My First Chart\")\nplt.tight_layout()\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![](index_files/figure-html/cell-2-output-1.png){width=662 height=374}\n:::\n:::\n\n\n## Conclusion\n\nThis is how easy it is to embed Python analysis in a blog post!\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}
