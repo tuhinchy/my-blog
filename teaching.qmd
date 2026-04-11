@@ -7,18 +7,27 @@ toc: false
 ## Current Courses
 
 <div style="border:1px solid #dde3f0; border-radius:8px; padding:20px; margin-bottom:20px; background:#f8f9fc;">
-<div style="font-size:1rem; font-weight:600; color:#1a2744;">ECON 1234 · Introduction to Statistics</div>
-<div style="font-size:0.88rem; color:#555; margin-top:4px;">Texas Tech University · Spring 2026 · Undergraduate</div>
+<div style="font-size:1rem; font-weight:600; color:#1a2744;">AAEC 2301 | Agricultural Statistics</div>
+<div style="font-size:0.88rem; color:#555; margin-top:4px;">Texas Tech University | Spring 2026 | Undergraduate</div>
 <div style="font-size:0.9rem; color:#444; margin-top:8px; margin-bottom:16px;">Introduction to statistical reasoning and data analysis for economics students.</div>
-
 <div style="font-size:0.85rem; font-weight:600; color:#1a2744; margin-bottom:8px; border-bottom:1px solid #dde3f0; padding-bottom:4px;">Course Materials</div>
-
 <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:10px;">
 <div style="background:white; border:1px solid #dde3f0; border-radius:6px; padding:12px;">
 <div style="font-size:0.85rem; font-weight:600; color:#1a2744; margin-bottom:8px;">Lecture Notes</div>
 <div style="font-size:0.82rem; color:#444; line-height:2;">
-<a href="materials/lecture-ch9.pdf" style="color:#1a2744; display:block;">Ch 9 - Confidence Intervals</a>
-<a href="materials/lecture-ch10.pdf" style="color:#1a2744; display:block;">Ch 10 - Hypothesis Testing</a>
+<a href="materials/Chapter 1.pdf" style="color:#1a2744; display:block;">Chapter 1</a>
+<a href="materials/Chapter 2 notes.pdf" style="color:#1a2744; display:block;">Chapter 2</a>
+<a href="materials/Chapter 3.pdf" style="color:#1a2744; display:block;">Chapter 3</a>
+<a href="materials/Chapter 4.pdf" style="color:#1a2744; display:block;">Chapter 4</a>
+<a href="materials/Chapter 5.pdf" style="color:#1a2744; display:block;">Chapter 5</a>
+<a href="materials/Chapter 6.pdf" style="color:#1a2744; display:block;">Chapter 6</a>
+<a href="materials/Chapter 7.pdf" style="color:#1a2744; display:block;">Chapter 7</a>
+<a href="materials/Chapter 8.pdf" style="color:#1a2744; display:block;">Chapter 8</a>
+<a href="materials/Chapter 9.pdf" style="color:#1a2744; display:block;">Chapter 9</a>
+<a href="materials/Chapter 10.pdf" style="color:#1a2744; display:block;">Chapter 10</a>
+<a href="materials/Chapter 11(2).pdf" style="color:#1a2744; display:block;">Chapter 11</a>
+<a href="materials/Notes_Ch11.pdf" style="color:#1a2744; display:block;">Notes Ch 11</a>
+<a href="materials/Notes_Chi-Square.pdf" style="color:#1a2744; display:block;">Notes Chi-Square</a>
 </div>
 </div>
 <div style="background:white; border:1px solid #dde3f0; border-radius:6px; padding:12px;">
