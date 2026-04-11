@@ -1,41 +1,51 @@
 ---
 title: "Teaching"
+page-layout: full
 toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+## Current Courses
 
-<div class="section-title">Current Courses</div>
+<div style="border:1px solid #dde3f0; border-radius:8px; padding:20px; margin-bottom:20px; background:#f8f9fc;">
+<div style="font-size:1rem; font-weight:600; color:#1a2744;">ECON 1234 · Introduction to Statistics</div>
+<div style="font-size:0.88rem; color:#555; margin-top:4px;">Texas Tech University · Spring 2026 · Undergraduate</div>
+<div style="font-size:0.9rem; color:#444; margin-top:8px; margin-bottom:16px;">Introduction to statistical reasoning and data analysis for economics students.</div>
 
-<div class="course-card">
-  <div class="course-title">ECON 1234 · Introduction to Statistics</div>
-  <div class="course-meta">Texas Tech University · Spring 2026 · Undergraduate</div>
-  <div style="font-size:0.9rem; margin-top:0.5rem;">
-    Introduction to statistical reasoning and data analysis for economics students.
-  </div>
-  <div style="margin-top:0.8rem;">
-    <span class="tag">Syllabus</span>
-    <span class="tag">Lecture Notes</span>
-    <span class="tag">Problem Sets</span>
-  </div>
+<div style="font-size:0.85rem; font-weight:600; color:#1a2744; margin-bottom:8px; border-bottom:1px solid #dde3f0; padding-bottom:4px;">Course Materials</div>
+
+<div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:10px; margin-top:10px;">
+<div style="background:white; border:1px solid #dde3f0; border-radius:6px; padding:12px;">
+<div style="font-size:0.85rem; font-weight:600; color:#1a2744; margin-bottom:8px;">Lecture Notes</div>
+<div style="font-size:0.82rem; color:#444; line-height:2;">
+<a href="materials/lecture-ch9.pdf" style="color:#1a2744; display:block;">Ch 9 - Confidence Intervals</a>
+<a href="materials/lecture-ch10.pdf" style="color:#1a2744; display:block;">Ch 10 - Hypothesis Testing</a>
+</div>
+</div>
+<div style="background:white; border:1px solid #dde3f0; border-radius:6px; padding:12px;">
+<div style="font-size:0.85rem; font-weight:600; color:#1a2744; margin-bottom:8px;">Exams</div>
+<div style="font-size:0.82rem; color:#444; line-height:2;">
+<a href="materials/exam1.pdf" style="color:#1a2744; display:block;">Exam 1</a>
+<a href="materials/exam2.pdf" style="color:#1a2744; display:block;">Exam 2</a>
+</div>
+</div>
+<div style="background:white; border:1px solid #dde3f0; border-radius:6px; padding:12px;">
+<div style="font-size:0.85rem; font-weight:600; color:#1a2744; margin-bottom:8px;">Quizzes</div>
+<div style="font-size:0.82rem; color:#444; line-height:2;">
+<a href="materials/quiz1.pdf" style="color:#1a2744; display:block;">Quiz 1</a>
+<a href="materials/quiz2.pdf" style="color:#1a2744; display:block;">Quiz 2</a>
+</div>
+</div>
+</div>
 </div>
 
-<div class="section-title">Previous Courses</div>
+## Previous Courses
 
-<div class="course-card">
-  <div class="course-title">ECON 2345 · Principles of Microeconomics</div>
-  <div class="course-meta">Texas Tech University · Fall 2025 · Undergraduate</div>
-  <div style="font-size:0.9rem; margin-top:0.5rem;">
-    Core principles of microeconomic theory and applications.
-  </div>
-  <div style="margin-top:0.8rem;">
-    <span class="tag">Syllabus</span>
-    <span class="tag">Lecture Notes</span>
-  </div>
+<div style="border:1px solid #dde3f0; border-radius:8px; padding:20px; margin-bottom:20px; background:#f8f9fc;">
+<div style="font-size:1rem; font-weight:600; color:#1a2744;">AAEC 4984 · Energy Economics</div>
+<div style="font-size:0.88rem; color:#555; margin-top:4px;">Virginia Tech · Spring 2023 · Undergraduate</div>
 </div>
 
-<div class="section-title">Teaching Philosophy</div>
-
-I believe in making economics accessible through real-world data and 
-hands-on analysis. I use Python and R to help students build practical 
-quantitative skills alongside theoretical understanding.
+<div style="border:1px solid #dde3f0; border-radius:8px; padding:20px; margin-bottom:20px; background:#f8f9fc;">
+<div style="font-size:1rem; font-weight:600; color:#1a2744;">AAEC 5014 · Applied Economic Analytics</div>
+<div style="font-size:0.88rem; color:#555; margin-top:4px;">Virginia Tech · Fall 2022 · Graduate</div>
+</div>

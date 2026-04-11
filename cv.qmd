@@ -1,0 +1,81 @@
+---
+title: ""
+page-layout: full
+toc: false
+---
+
+<div style="max-width:800px; margin:40px auto; padding:0 20px;">
+<div style="font-size:1.4rem; font-weight:700; color:#1a2744; margin-bottom:4px;">Tuhinur Rahman Chowdhury</div>
+<div style="font-size:0.88rem; color:#555; margin-bottom:16px;">tuhchowd@ttu.edu | +1 701-200-2798 | Texas Tech University</div>
+
+<div style="margin-top:24px; border-top:2px solid #1a2744; padding-top:12px;">
+<div style="font-size:1rem; font-weight:700; color:#1a2744; margin-bottom:10px;">Education</div>
+<div style="font-size:0.88rem; color:#444; line-height:2;">
+<div><strong>PhD, Agricultural & Applied Economics</strong> · Texas Tech University · 2024–Present</div>
+<div><strong>MS, Agricultural & Applied Economics</strong> · Virginia Tech · 2023</div>
+<div><strong>MS, Agribusiness & Applied Economics</strong> · North Dakota State University · 2022</div>
+<div><strong>BSS, Economics</strong> · Shahjalal University of Science & Technology, Bangladesh · 2015</div>
+</div>
+</div>
+
+<div style="margin-top:24px; border-top:2px solid #1a2744; padding-top:12px;">
+<div style="font-size:1rem; font-weight:700; color:#1a2744; margin-bottom:10px;">Publications</div>
+<div style="font-size:0.88rem; color:#444; line-height:2;">
+<div style="margin-bottom:8px;">Chowdhury, T.R., et al. (2022). Risk factors for child stunting in Bangladesh. <em>Archives of Public Health</em>, 80(1), 126.</div>
+<div style="margin-bottom:8px;">Chowdhury, T.R., et al. (2020). Factors associated with stunting and wasting in children under 2 years in Bangladesh. <em>Heliyon</em>, 6(9), e04849.</div>
+<div style="margin-bottom:8px;">Chowdhury, T.R., et al. (2018). Socio-economic risk factors for early childhood underweight in Bangladesh. <em>Globalization and Health</em>, 14(1), 54.</div>
+</div>
+</div>
+
+<div style="margin-top:24px; border-top:2px solid #1a2744; padding-top:12px;">
+<div style="font-size:1rem; font-weight:700; color:#1a2744; margin-bottom:10px;">Research Experience</div>
+<div style="font-size:0.88rem; color:#444; line-height:1.8;">
+<div style="margin-bottom:10px;"><strong>Graduate Research Assistant | Texas Tech University</strong> | Jan 2024–Present<br>Supervisor: Dr. Syed Badruddoza<br> Rural hospital closures on health outcomes<br> Labor market forecasting using linear and nonlinear models<br> Marijuana legalization effects on agricultural employment</div>
+<div style="margin-bottom:10px;"><strong>Graduate Research Assistant | Virginia Tech University</strong> | Aug 2023–Jan 2024<br>Supervisor: Dr. Chi Ta<br>· Energy audit mandates using 12-year firm-level panel data</div>
+<div style="margin-bottom:10px;"><strong>Graduate Research Assistant | North Dakota State University</strong> | Jan 2021–Aug 2022<br>Supervisor: Dr. Lei Zhang<br> COVID-19 impacts on housing markets</div>
+</div>
+</div>
+
+<div style="margin-top:24px; border-top:2px solid #1a2744; padding-top:12px;">
+<div style="font-size:1rem; font-weight:700; color:#1a2744; margin-bottom:10px;">Teaching Experience</div>
+<div style="font-size:0.88rem; color:#444; line-height:1.8;">
+<div style="margin-bottom:8px;"><strong>Graduate Teaching Assistant | Virginia Tech University</strong> · AAEC 4984 Energy Economics · Spring 2023</div>
+<div style="margin-bottom:8px;"><strong>Graduate Teaching Assistant | Virginia Tech University</strong> · AAEC 5014 Applied Economic Analytics · Fall 2022</div>
+<div style="margin-bottom:8px;"><strong>Lecturer | Metropolitan University, Bangladesh</strong> · Economics · 2020</div>
+<div style="margin-bottom:8px;"><strong>Lecturer | Feni Girls Cadet College, Bangladesh</strong> · Economics · 2020–2021</div>
+</div>
+</div>
+
+<div style="margin-top:24px; border-top:2px solid #1a2744; padding-top:12px;">
+<div style="font-size:1rem; font-weight:700; color:#1a2744; margin-bottom:10px;">Conference Presentations</div>
+<div style="font-size:0.88rem; color:#444; line-height:2;">
+<div style="margin-bottom:8px;">Chowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Employment. AAEA Annual Meeting, Denver, CO, July 2025.</div>
+<div style="margin-bottom:8px;">Chowdhury, T.R., Badruddoza, S. Investigating Factors Behind U.S. Rural Hospital Closure. Davis College, TTU, Sep 2024.</div>
+<div style="margin-bottom:8px;">Zhang, L., Chowdhury, T.R. Impacts of Stay-at-home Orders on Housing Markets. SRSA 2023.</div>
+<div style="margin-bottom:8px;">Chowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Outcome. SAEA Annual Meeting, Louisville, KY, Feb 2026.</div>
+</div>
+</div>
+
+<div style="margin-top:24px; border-top:2px solid #1a2744; padding-top:12px;">
+<div style="font-size:1rem; font-weight:700; color:#1a2744; margin-bottom:10px;">Fellowships & Grants</div>
+<div style="font-size:0.88rem; color:#444; line-height:2;">
+<div>Bayer CropScience Graduate Fellowship | 2024, 2025</div>
+<div>Department Travel Grant | Texas Tech University · 2025, 2026</div>
+<div>Graduate School Travel Grant | Texas Tech University · 2025</div>
+<div>AAEA Travel Grant | 2025</div>
+</div>
+</div>
+
+<div style="margin-top:24px; border-top:2px solid #1a2744; padding-top:12px;">
+<div style="font-size:1rem; font-weight:700; color:#1a2744; margin-bottom:10px;">Skills</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap;">
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">Python</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">R</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">Stata</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">SPSS</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">SQL</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">LaTeX</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">Tableau</span>
+</div>
+</div>
+</div>

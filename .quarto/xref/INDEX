@@ -22,5 +22,8 @@
   },
   "teaching.qmd": {
     "teaching.html": "b3558f17"
+  },
+  "cv.qmd": {
+    "cv.html": "98c212bd"
   }
 }

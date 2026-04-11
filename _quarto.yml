@@ -19,7 +19,7 @@ website:
       - href: about.qmd
         text: About
     right:
-      - href: about.qmd
+      - href: cv.qmd
         text: CV
 
 format:
