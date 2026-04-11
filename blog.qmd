@@ -1,8 +1,12 @@
 ---
 title: "Blog"
+toc: false
 listing:
   contents: posts
   sort: "date desc"
   type: default
   categories: true
+  fields: [date, title, description, categories]
 ---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">

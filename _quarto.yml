@@ -5,17 +5,27 @@ project:
 website:
   title: "Tuhinur Rahman Chowdhury"
   navbar:
+    background: "#1a2744"
+    foreground: "white"
     left:
       - href: index.qmd
         text: Home
-      - href: about.qmd
-        text: About
+      - href: research.qmd
+        text: Research
+      - href: teaching.qmd
+        text: Teaching
       - href: blog.qmd
         text: Blog
+    right:
+      - href: about.qmd
+        text: CV
 
 format:
   html:
     theme: [flatly, custom.scss]
-    toc: true
+    toc: false
     code-fold: true
     code-tools: true
+
+execute:
+  freeze: auto

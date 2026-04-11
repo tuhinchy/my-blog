@@ -1,0 +1,42 @@
+---
+title: "Research"
+toc: false
+---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<div class="section-title">Published Papers</div>
+
+<div class="paper-card">
+  <div class="paper-title">Your Paper Title Here</div>
+  <div class="paper-meta">Journal Name · 2024 · with Co-Author Name</div>
+  <div style="font-size:0.9rem; margin-top:0.5rem;">
+    Brief description of the paper and its findings.
+  </div>
+  <span class="tag">Econometrics</span>
+  <span class="tag">Policy</span>
+</div>
+
+<div class="section-title">Working Papers</div>
+
+<div class="paper-card">
+  <div class="paper-title">Your Working Paper Title Here</div>
+  <div class="paper-meta">Working Paper · 2025</div>
+  <div style="font-size:0.9rem; margin-top:0.5rem;">
+    Brief description of the paper and its findings.
+  </div>
+  <span class="tag">Labor Markets</span>
+  <span class="tag">Causal Inference</span>
+</div>
+
+<div class="section-title">Ongoing Research</div>
+
+<div class="paper-card">
+  <div class="paper-title">Your Ongoing Research Title Here</div>
+  <div class="paper-meta">In Progress · 2026</div>
+  <div style="font-size:0.9rem; margin-top:0.5rem;">
+    Brief description of what you are currently working on.
+  </div>
+  <span class="tag">Time Series</span>
+  <span class="tag">Agriculture</span>
+</div>

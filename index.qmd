@@ -1,25 +1,40 @@
 ---
 title: ""
 page-layout: full
+toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
 <div class="profile-section">
   <img src="profile.jpg" class="profile-photo">
   <div>
 
-Tuhinur Rahman Chowdhury
+  <h2 style="margin-top:0; color:#1a2744;">Tuhinur Rahman Chowdhury</h2>
 
-  Graduate Research Assistant| Graduate Part Time Instructor | Texas Tech University
+  **PhD Student in Agricultural & Applied Economics**
+  
+  Texas Tech University
 
-I am a PhD student in Agricultural and Applied Economics at Texas Tech University. My research centers on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis. In addition to my research, I serve as a Graduate Part-Time Instructor, teaching undergraduate statistics and helping students build a strong foundation in data analysis and statistical reasoning
+  I am a PhD student in the Department of Agricultural and Applied Economics at Texas Tech University. My research centers on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis.
 
   **Email:** tuhchowd@ttu.edu
 
   </div>
 </div>
 
-## Featured Posts
+---
 
-Check out my latest Python analysis posts below.
+<div class="section-title">Research Interests</div>
+
+<span class="tag">Applied Econometrics</span>
+<span class="tag">Policy Analysis</span>
+<span class="tag">Agricultural Labor Markets</span>
+<span class="tag">Causal Inference</span>
+<span class="tag">Time Series Analysis</span>
+
+---
+
+<div class="section-title">Latest Blog Posts</div>
+
+See my latest posts on research and data analysis on the [Blog](blog.qmd) page.

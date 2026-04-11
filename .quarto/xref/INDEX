@@ -16,5 +16,11 @@
   },
   "posts/first-analysis/index.qmd": {
     "index.html": "b67fc608"
+  },
+  "research.qmd": {
+    "research.html": "8ed9ea76"
+  },
+  "teaching.qmd": {
+    "teaching.html": "b3558f17"
   }
 }

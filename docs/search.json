@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "Current Courses\n\n\n\nECON 1234 · Introduction to Statistics\n\n\nTexas Tech University · Spring 2026 · Undergraduate\n\n\nIntroduction to statistical reasoning and data analysis for economics students.\n\n\n&lt;span class=\"tag\"&gt;Syllabus&lt;/span&gt;\n&lt;span class=\"tag\"&gt;Lecture Notes&lt;/span&gt;\n&lt;span class=\"tag\"&gt;Problem Sets&lt;/span&gt;\n\n\n\nPrevious Courses\n\n\n\nECON 2345 · Principles of Microeconomics\n\n\nTexas Tech University · Fall 2025 · Undergraduate\n\n\nCore principles of microeconomic theory and applications.\n\n\n&lt;span class=\"tag\"&gt;Syllabus&lt;/span&gt;\n&lt;span class=\"tag\"&gt;Lecture Notes&lt;/span&gt;\n\n\n\nTeaching Philosophy\n\nI believe in making economics accessible through real-world data and hands-on analysis. I use Python and R to help students build practical quantitative skills alongside theoretical understanding."
+  },
+  {
     "objectID": "posts/welcome/index.html",
     "href": "posts/welcome/index.html",
     "title": "Welcome To My Blog",
@@ -32,7 +39,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My First Python Analysis\n\n\n\npython\n\ndata\n\n\n\nA simple data analysis using Python and matplotlib\n\n\n\n\n\nApr 11, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 11, 2026\n\n\nHarlow Malloc\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 8, 2026\n\n\nTristan O’Malley\n\n\n\n\n\nNo matching items"
+    "text": "My First Python Analysis\n\n\n\npython\n\ndata\n\n\n\nA simple data analysis using Python and matplotlib\n\n\n\n\n\nApr 11, 2026\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\ncode\n\nanalysis\n\n\n\n\n\n\n\n\n\nApr 11, 2026\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\n\n\nApr 8, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "about.html",
@@ -46,14 +53,7 @@
     "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Code"
-  },
-  {
-    "objectID": "index.html#featured-posts",
-    "href": "index.html#featured-posts",
-    "title": "",
-    "section": "Featured Posts",
-    "text": "Featured Posts\nCheck out my latest Python analysis posts below."
+    "text": "Code\n\n\n\n\n\n\n\n\n\nTuhinur Rahman Chowdhury\n\nPhD Student in Agricultural & Applied Economics\nTexas Tech University\nI am a PhD student in the Department of Agricultural and Applied Economics at Texas Tech University. My research centers on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis.\nEmail: tuhchowd@ttu.edu\n\n\n\n\nResearch Interests\n\nApplied Econometrics Policy Analysis Agricultural Labor Markets Causal Inference Time Series Analysis\n\n\nLatest Blog Posts\n\nSee my latest posts on research and data analysis on the Blog page."
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -61,5 +61,12 @@
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Published Papers\n\n\n\nYour Paper Title Here\n\n\nJournal Name · 2024 · with Co-Author Name\n\n\nBrief description of the paper and its findings.\n\nEconometrics Policy\n\n\nWorking Papers\n\n\n\nYour Working Paper Title Here\n\n\nWorking Paper · 2025\n\n\nBrief description of the paper and its findings.\n\nLabor Markets Causal Inference\n\n\nOngoing Research\n\n\n\nYour Ongoing Research Title Here\n\n\nIn Progress · 2026\n\n\nBrief description of what you are currently working on.\n\nTime Series Agriculture"
   }
 ]

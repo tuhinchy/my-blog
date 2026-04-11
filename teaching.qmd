@@ -1,0 +1,41 @@
+---
+title: "Teaching"
+toc: false
+---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<div class="section-title">Current Courses</div>
+
+<div class="course-card">
+  <div class="course-title">ECON 1234 · Introduction to Statistics</div>
+  <div class="course-meta">Texas Tech University · Spring 2026 · Undergraduate</div>
+  <div style="font-size:0.9rem; margin-top:0.5rem;">
+    Introduction to statistical reasoning and data analysis for economics students.
+  </div>
+  <div style="margin-top:0.8rem;">
+    <span class="tag">Syllabus</span>
+    <span class="tag">Lecture Notes</span>
+    <span class="tag">Problem Sets</span>
+  </div>
+</div>
+
+<div class="section-title">Previous Courses</div>
+
+<div class="course-card">
+  <div class="course-title">ECON 2345 · Principles of Microeconomics</div>
+  <div class="course-meta">Texas Tech University · Fall 2025 · Undergraduate</div>
+  <div style="font-size:0.9rem; margin-top:0.5rem;">
+    Core principles of microeconomic theory and applications.
+  </div>
+  <div style="margin-top:0.8rem;">
+    <span class="tag">Syllabus</span>
+    <span class="tag">Lecture Notes</span>
+  </div>
+</div>
+
+<div class="section-title">Teaching Philosophy</div>
+
+I believe in making economics accessible through real-world data and 
+hands-on analysis. I use Python and R to help students build practical 
+quantitative skills alongside theoretical understanding.
