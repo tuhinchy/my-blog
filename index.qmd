@@ -4,37 +4,56 @@ page-layout: full
 toc: false
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
-<div class="profile-section">
-  <img src="profile.jpg" class="profile-photo">
-  <div>
-
-  <h2 style="margin-top:0; color:#1a2744;">Tuhinur Rahman Chowdhury</h2>
-
-  **PhD Student in Agricultural & Applied Economics**
-  
-  Texas Tech University
-
-  I am a PhD student in the Department of Agricultural and Applied Economics at Texas Tech University. My research centers on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis.
-
-  **Email:** tuhchowd@ttu.edu
-
-  </div>
+<div style="background:#f0f4fb; padding:16px; display:flex; gap:14px; align-items:center;">
+<div style="width:52px; height:52px; border-radius:50%; background:#1a2744; color:white; display:flex; align-items:center; justify-content:center; font-weight:600;">TRC</div>
+<div>
+<div style="font-size:1.1rem; font-weight:600; color:#1a2744;">Tuhinur Rahman Chowdhury</div>
+<div style="font-size:0.88rem; color:#555;">PhD Student · Agricultural & Applied Economics · Texas Tech University</div>
+<div style="font-size:0.85rem; color:#1a2744;">tuhchowd@ttu.edu</div>
+</div>
 </div>
 
----
+<div style="border-bottom:1px solid #e5e9f0; display:flex; padding:0 0 0 16px; margin-top:16px;">
+<a href="blog.qmd" style="padding:8px 14px; font-size:0.88rem; color:#1a2744; font-weight:600; border-bottom:2px solid #1a2744; text-decoration:none;">All Posts</a>
+<a href="research.qmd" style="padding:8px 14px; font-size:0.88rem; color:#888; text-decoration:none;">Research</a>
+<a href="teaching.qmd" style="padding:8px 14px; font-size:0.88rem; color:#888; text-decoration:none;">Teaching</a>
+<a href="blog.qmd" style="padding:8px 14px; font-size:0.88rem; color:#888; text-decoration:none;">Code</a>
+</div>
 
-<div class="section-title">Research Interests</div>
-
-<span class="tag">Applied Econometrics</span>
-<span class="tag">Policy Analysis</span>
-<span class="tag">Agricultural Labor Markets</span>
-<span class="tag">Causal Inference</span>
-<span class="tag">Time Series Analysis</span>
-
----
-
-<div class="section-title">Latest Blog Posts</div>
-
-See my latest posts on research and data analysis on the [Blog](blog.qmd) page.
+<div style="display:flex; gap:0; margin-top:16px;">
+<div style="flex:1; padding:16px; border-right:1px solid #e5e9f0;">
+<div style="border:1px solid #e5e9f0; border-radius:8px; padding:12px; margin-bottom:12px;">
+<span style="background:#1a2744; color:white; font-size:0.72rem; padding:2px 8px; border-radius:3px;">Research</span>
+<div style="font-size:1rem; font-weight:600; color:#1a2744; margin-top:6px;">Impact of agricultural policy on labor markets</div>
+<div style="font-size:0.88rem; color:#555; margin-top:4px;">Using panel data methods to estimate the causal effect of subsidy programs.</div>
+<div style="font-size:0.8rem; color:#999; margin-top:6px;">April 11, 2026</div>
+</div>
+<div style="border:1px solid #e5e9f0; border-radius:8px; padding:12px; margin-bottom:12px;">
+<span style="background:#1a2744; color:white; font-size:0.72rem; padding:2px 8px; border-radius:3px;">Code</span>
+<div style="font-size:1rem; font-weight:600; color:#1a2744; margin-top:6px;">Time series analysis with Python</div>
+<div style="font-size:0.88rem; color:#555; margin-top:4px;">A step-by-step walkthrough of ARIMA modeling using pandas and statsmodels.</div>
+<div style="font-size:0.8rem; color:#999; margin-top:6px;">March 28, 2026</div>
+</div>
+<div style="border:1px solid #e5e9f0; border-radius:8px; padding:12px; margin-bottom:12px;">
+<span style="background:#1a2744; color:white; font-size:0.72rem; padding:2px 8px; border-radius:3px;">Teaching</span>
+<div style="font-size:1rem; font-weight:600; color:#1a2744; margin-top:6px;">Introduction to causal inference</div>
+<div style="font-size:0.88rem; color:#555; margin-top:4px;">Lecture notes and materials from my undergraduate statistics course at Texas Tech.</div>
+<div style="font-size:0.8rem; color:#999; margin-top:6px;">March 10, 2026</div>
+</div>
+</div>
+<div style="width:200px; padding:16px; background:#fafbfd;">
+<input placeholder="Search posts..." style="width:100%; border:1px solid #e5e9f0; border-radius:5px; padding:6px 10px; font-size:0.85rem; margin-bottom:12px;">
+<div style="font-size:0.75rem; font-weight:700; color:#1a2744; text-transform:uppercase; margin-bottom:6px;">Topics</div>
+<button style="display:block; width:100%; text-align:left; background:#1a2744; color:white; border:none; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">All</button>
+<button style="display:block; width:100%; text-align:left; background:white; border:1px solid #e5e9f0; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">Research</button>
+<button style="display:block; width:100%; text-align:left; background:white; border:1px solid #e5e9f0; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">Code</button>
+<button style="display:block; width:100%; text-align:left; background:white; border:1px solid #e5e9f0; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">Teaching</button>
+<div style="font-size:0.75rem; font-weight:700; color:#1a2744; text-transform:uppercase; margin-top:12px; margin-bottom:6px;">Keywords</div>
+<button style="display:block; width:100%; text-align:left; background:white; border:1px solid #e5e9f0; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">Econometrics</button>
+<button style="display:block; width:100%; text-align:left; background:white; border:1px solid #e5e9f0; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">Python</button>
+<button style="display:block; width:100%; text-align:left; background:white; border:1px solid #e5e9f0; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">Labor Markets</button>
+<div style="font-size:0.75rem; font-weight:700; color:#1a2744; text-transform:uppercase; margin-top:12px; margin-bottom:6px;">Year</div>
+<button style="display:block; width:100%; text-align:left; background:white; border:1px solid #e5e9f0; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">2026</button>
+<button style="display:block; width:100%; text-align:left; background:white; border:1px solid #e5e9f0; border-radius:4px; padding:5px 10px; font-size:0.82rem; margin-bottom:4px;">2025</button>
+</div>
+</div>

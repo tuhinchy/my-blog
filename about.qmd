@@ -1,19 +1,41 @@
 ---
-title: "About"
-image: profile.jpg
-about:
-  template: jolla
-  links:
-    - icon: bluesky
-      text: Bluesky
-      href: https://bsky.app/
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
-
+title: ""
+page-layout: full
+toc: false
 ---
 
-About this blog
+<div style="max-width:800px; margin:40px auto; padding:0 20px;">
+<div style="display:flex; gap:24px; align-items:flex-start;">
+<img src="profile.jpg" style="width:160px; height:160px; border-radius:8px; object-fit:cover; border:3px solid #1a2744; flex-shrink:0;">
+<div>
+<div style="font-size:1.4rem; font-weight:600; color:#1a2744; margin-bottom:6px;">Tuhinur Rahman Chowdhury</div>
+<div style="font-size:0.95rem; color:#555; margin-bottom:4px;">PhD Student | Agricultural & Applied Economics</div>
+<div style="font-size:0.95rem; color:#555; margin-bottom:16px;">Texas Tech University</div>
+<div style="font-size:0.9rem; color:#444; line-height:1.8; margin-bottom:16px;">I am a PhD student in the Department of Agricultural and Applied Economics at Texas Tech University. My research focuses on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis.</div>
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+<a href="mailto:tuhchowd@ttu.edu" style="font-size:0.82rem; color:#1a2744; text-decoration:none; border:1px solid #1a2744; padding:5px 12px; border-radius:4px;">Email</a>
+<a href="https://www.linkedin.com/in/tuhinchy" style="font-size:0.82rem; color:#1a2744; text-decoration:none; border:1px solid #1a2744; padding:5px 12px; border-radius:4px;">LinkedIn</a>
+<a href="https://github.com/tuhinchy" style="font-size:0.82rem; color:#1a2744; text-decoration:none; border:1px solid #1a2744; padding:5px 12px; border-radius:4px;">GitHub</a>
+</div>
+</div>
+</div>
+
+<div style="margin-top:32px; border-top:2px solid #1a2744; padding-top:16px;">
+<div style="font-size:1rem; font-weight:600; color:#1a2744; margin-bottom:12px;">Research Interests</div>
+<div style="display:flex; gap:8px; flex-wrap:wrap;">
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">Applied Econometrics</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">Policy Analysis</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">Agricultural Labor Markets</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">Causal Inference</span>
+<span style="background:#1a2744; color:white; font-size:0.8rem; padding:4px 12px; border-radius:4px;">Time Series Analysis</span>
+</div>
+</div>
+
+<div style="margin-top:32px; border-top:2px solid #1a2744; padding-top:16px;">
+<div style="font-size:1rem; font-weight:600; color:#1a2744; margin-bottom:12px;">Education</div>
+<div style="font-size:0.9rem; color:#444; line-height:1.8;">
+<div><strong>Texas Tech University</strong> — PhD in Agricultural & Applied Economics (Expected 2027)</div>
+<div><strong>Texas Tech University</strong> — MS in Agricultural & Applied Economics (2024)</div>
+</div>
+</div>
+</div>

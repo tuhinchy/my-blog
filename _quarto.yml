@@ -16,13 +16,15 @@ website:
         text: Teaching
       - href: blog.qmd
         text: Blog
+      - href: about.qmd
+        text: About
     right:
       - href: about.qmd
         text: CV
 
 format:
   html:
-    theme: [flatly, custom.scss]
+    theme: [cosmo, custom.scss]
     toc: false
     code-fold: true
     code-tools: true
