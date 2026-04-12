@@ -1,12 +1,18 @@
 ---
-title: "Blog"
-toc: false
-listing:
-  contents: posts
-  sort: "date desc"
-  type: default
-  categories: true
-  fields: [date, title, description, categories]
+title: "Welcome to My Blog!"
+date: "2026-04-11"
+categories: [Welcome]
+description: "A brief introduction to who I am and what this blog is about"
+image: "../../profile.jpg"
 ---
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+Welcome! I am Tuhinur Rahman Chowdhury, a PhD student and Graduate Instructor in Agricultural and Applied Economics at Texas Tech University. This site is where I share my research on labor markets, agricultural policy, and rural economics, along with course materials for my students and hands-on Python and Stata coding tutorials for fellow researchers and economists.
+
+## What You Will Find Here
+
+- **Research** — working papers, published work and ongoing projects
+- **Teaching** — course materials, lecture notes and problem sets
+- **Blog Posts** — data analysis tutorials using Python and Stata
+- **Code** — reproducible econometric analysis and visualizations
+
+Feel free to reach out at tuhchowd@ttu.edu for collaborations or questions!
