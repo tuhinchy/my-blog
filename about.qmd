@@ -35,7 +35,7 @@ toc: false
 <div style="font-size:1rem; font-weight:600; color:#1a2744; margin-bottom:12px;">Education</div>
 <div style="font-size:0.9rem; color:#444; line-height:1.8;">
 <div><strong>Texas Tech University</strong> — PhD in Agricultural & Applied Economics (Expected 2027)</div>
-<div><strong>Texas Tech University</strong> — MS in Agricultural & Applied Economics (2024)</div>
+<div><strong>Virginia Tech University</strong> — MS in Agricultural & Applied Economics (2024)</div>
 </div>
 </div>
 </div>
