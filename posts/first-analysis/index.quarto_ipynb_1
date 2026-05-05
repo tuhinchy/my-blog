@@ -1,0 +1,62 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"My First Python Analysis\"\n",
+        "date: \"2026-04-11\"\n",
+        "categories: [python, data]\n",
+        "description: \"A simple data analysis using Python and matplotlib\"\n",
+        "---\n",
+        "\n",
+        "## Introduction\n",
+        "\n",
+        "This is my first Python analysis post!"
+      ],
+      "id": "4784e9f9"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import matplotlib.pyplot as plt\n",
+        "import pandas as pd\n",
+        "\n",
+        "data = {\"Month\": [\"Jan\",\"Feb\",\"Mar\",\"Apr\"], \n",
+        "        \"Value\": [120, 145, 133, 160]}\n",
+        "df = pd.DataFrame(data)\n",
+        "\n",
+        "fig, ax = plt.subplots(figsize=(7, 4))\n",
+        "ax.bar(df[\"Month\"], df[\"Value\"], color=\"#2563eb\")\n",
+        "ax.set_title(\"My First Chart\")\n",
+        "plt.tight_layout()\n",
+        "plt.show()"
+      ],
+      "id": "6695a645",
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "## Conclusion\n",
+        "\n",
+        "This is how easy it is to embed Python analysis in a blog post!"
+      ],
+      "id": "6f2df8b9"
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/Users/tuhinurrahmanchowdhury/anaconda3/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
