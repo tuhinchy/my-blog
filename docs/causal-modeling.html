@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Causal Modeling – Tuhinur Rahman Chowdhury</title>
+<title>causal-modeling – Tuhinur Rahman Chowdhury</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -172,39 +172,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><h1 class="title display-7"></h1></header><div class="quarto-title-block"><div class="quarto-title-tools-only"><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Causal Modeling</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+
+
+
+<div class="hero-banner">
+  <div class="hero-name">Causal Modeling</div>
+  <div class="hero-role">Learning with Tuhinur · Notes, tutorials, and resources on causal inference</div>
+  <div class="hero-tags">
+    <span class="hero-tag"><span class="dot" style="background:#f59e0b;"></span>Potential Outcomes</span>
+    <span class="hero-tag"><span class="dot" style="background:#60a5fa;"></span>DAGs</span>
+    <span class="hero-tag"><span class="dot" style="background:#34d399;"></span>Difference-in-Differences</span>
+    <span class="hero-tag"><span class="dot" style="background:#a78bfa;"></span>Instrumental Variables</span>
+    <span class="hero-tag"><span class="dot" style="background:#f87171;"></span>Regression Discontinuity</span>
+  </div>
 </div>
 
-
-
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<div style="padding: 2rem 0.5rem 0.5rem;">
-  <div style="font-size:1.6rem; font-weight:700; color:#1a2744; margin-bottom:0.4rem;">Causal Modeling</div>
-  <div style="font-size:0.95rem; color:#555; max-width:680px; line-height:1.7;">
-    A collection of notes, tutorials, and resources on causal inference — from potential outcomes and DAGs to difference-in-differences, instrumental variables, and regression discontinuity designs.
-  </div>
-  <div style="height:3px; width:48px; background:#1a2744; border-radius:2px; margin-top:1rem;"></div>
-</div>
-
-<div style="padding: 1rem 0.5rem 3rem;">
-  <div style="color:#999; font-size:0.9rem; font-style:italic; margin-top:1rem;">
-    Content coming soon. Check back for notes and tutorials.
-  </div>
+<div style="padding: 2rem 0.5rem 3rem; color:#888; font-size:0.92rem; font-style:italic;">
+  Content coming soon. Check back for notes and tutorials.
 </div>
 
 
@@ -664,26 +650,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Causal Modeling"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> ""</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">page-layout:</span><span class="co"> full</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">toc:</span><span class="co"> false</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="in">```{=html}</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div style="padding: 2rem 0.5rem 0.5rem;"&gt;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div style="font-size:1.6rem; font-weight:700; color:#1a2744; margin-bottom:0.4rem;"&gt;Causal Modeling&lt;/div&gt;</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div style="font-size:0.95rem; color:#555; max-width:680px; line-height:1.7;"&gt;</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">    A collection of notes, tutorials, and resources on causal inference — from potential outcomes and DAGs to difference-in-differences, instrumental variables, and regression discontinuity designs.</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div style="height:3px; width:48px; background:#1a2744; border-radius:2px; margin-top:1rem;"&gt;&lt;/div&gt;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div style="padding: 1rem 0.5rem 3rem;"&gt;</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div style="color:#999; font-size:0.9rem; font-style:italic; margin-top:1rem;"&gt;</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">    Content coming soon. Check back for notes and tutorials.</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div class="hero-banner"&gt;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="hero-name"&gt;Causal Modeling&lt;/div&gt;</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="hero-role"&gt;Learning with Tuhinur &amp;middot; Notes, tutorials, and resources on causal inference&lt;/div&gt;</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;div class="hero-tags"&gt;</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="hero-tag"&gt;&lt;span class="dot" style="background:#f59e0b;"&gt;&lt;/span&gt;Potential Outcomes&lt;/span&gt;</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="hero-tag"&gt;&lt;span class="dot" style="background:#60a5fa;"&gt;&lt;/span&gt;DAGs&lt;/span&gt;</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="hero-tag"&gt;&lt;span class="dot" style="background:#34d399;"&gt;&lt;/span&gt;Difference-in-Differences&lt;/span&gt;</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="hero-tag"&gt;&lt;span class="dot" style="background:#a78bfa;"&gt;&lt;/span&gt;Instrumental Variables&lt;/span&gt;</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="in">    &lt;span class="hero-tag"&gt;&lt;span class="dot" style="background:#f87171;"&gt;&lt;/span&gt;Regression Discontinuity&lt;/span&gt;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="in">  &lt;/div&gt;</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;div style="padding: 2rem 0.5rem 3rem; color:#888; font-size:0.92rem; font-style:italic;"&gt;</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="in">  Content coming soon. Check back for notes and tutorials.</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="in">&lt;/div&gt;</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

@@ -1,21 +1,23 @@
 ---
-title: "Causal Modeling"
+title: ""
 page-layout: full
 toc: false
 ---
 
 ```{=html}
-<div style="padding: 2rem 0.5rem 0.5rem;">
-  <div style="font-size:1.6rem; font-weight:700; color:#1a2744; margin-bottom:0.4rem;">Causal Modeling</div>
-  <div style="font-size:0.95rem; color:#555; max-width:680px; line-height:1.7;">
-    A collection of notes, tutorials, and resources on causal inference — from potential outcomes and DAGs to difference-in-differences, instrumental variables, and regression discontinuity designs.
+<div class="hero-banner">
+  <div class="hero-name">Causal Modeling</div>
+  <div class="hero-role">Learning with Tuhinur &middot; Notes, tutorials, and resources on causal inference</div>
+  <div class="hero-tags">
+    <span class="hero-tag"><span class="dot" style="background:#f59e0b;"></span>Potential Outcomes</span>
+    <span class="hero-tag"><span class="dot" style="background:#60a5fa;"></span>DAGs</span>
+    <span class="hero-tag"><span class="dot" style="background:#34d399;"></span>Difference-in-Differences</span>
+    <span class="hero-tag"><span class="dot" style="background:#a78bfa;"></span>Instrumental Variables</span>
+    <span class="hero-tag"><span class="dot" style="background:#f87171;"></span>Regression Discontinuity</span>
   </div>
-  <div style="height:3px; width:48px; background:#1a2744; border-radius:2px; margin-top:1rem;"></div>
 </div>
 
-<div style="padding: 1rem 0.5rem 3rem;">
-  <div style="color:#999; font-size:0.9rem; font-style:italic; margin-top:1rem;">
-    Content coming soon. Check back for notes and tutorials.
-  </div>
+<div style="padding: 2rem 0.5rem 3rem; color:#888; font-size:0.92rem; font-style:italic;">
+  Content coming soon. Check back for notes and tutorials.
 </div>
 ```
