@@ -20,6 +20,10 @@ website:
         menu:
           - text: "Causal Modeling"
             href: causal-modeling.qmd
+          - text: "Big Data & Machine Learning"
+            href: big-data-ml.qmd
+          - text: "Time Series Forecasting"
+            href: time-series.qmd
       - href: about.qmd
         text: About
     right:

@@ -28,5 +28,11 @@
   },
   "causal-modeling.qmd": {
     "causal-modeling.html": "30908a5d"
+  },
+  "big-data-ml.qmd": {
+    "big-data-ml.html": "a4b4c6c8"
+  },
+  "time-series.qmd": {
+    "time-series.html": "770bd5a1"
   }
 }
