@@ -15,7 +15,7 @@
         "\n",
         "This is my first Python analysis post!"
       ],
-      "id": "4784e9f9"
+      "id": "5f899c42"
     },
     {
       "cell_type": "code",
@@ -34,7 +34,7 @@
         "plt.tight_layout()\n",
         "plt.show()"
       ],
-      "id": "6695a645",
+      "id": "9e5eeabc",
       "execution_count": null,
       "outputs": []
     },
@@ -46,7 +46,7 @@
         "\n",
         "This is how easy it is to embed Python analysis in a blog post!"
       ],
-      "id": "6f2df8b9"
+      "id": "683581b7"
     }
   ],
   "metadata": {
