@@ -25,5 +25,8 @@
   },
   "cv.qmd": {
     "cv.html": "98c212bd"
+  },
+  "causal-modeling.qmd": {
+    "causal-modeling.html": "30908a5d"
   }
 }

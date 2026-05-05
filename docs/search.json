@@ -14,39 +14,32 @@
     "text": "What You Will Find Here\n\nResearch — working papers, published work and ongoing projects\nTeaching — course materials, lecture notes and problem sets\nBlog Posts — data analysis tutorials using Python and Stata\nCode — reproducible econometric analysis and visualizations\n\nFeel free to reach out at tuhchowd@ttu.edu for collaborations or questions!"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "causal-modeling.html",
+    "href": "causal-modeling.html",
+    "title": "Causal Modeling",
+    "section": "",
+    "text": "Causal Modeling\n  \n    A collection of notes, tutorials, and resources on causal inference — from potential outcomes and DAGs to difference-in-differences, instrumental variables, and regression discontinuity designs.\n  \n  \n\n\n\n  \n    Content coming soon. Check back for notes and tutorials."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\n\n\n\n\n\nTuhinur Rahman Chowdhury\n\n\nPhD Student | Agricultural & Applied Economics\n\n\nTexas Tech University\n\n\nI am a PhD student in the Department of Agricultural and Applied Economics at Texas Tech University. My research focuses on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis.\n\n\nEmail LinkedIn GitHub\n\n\n\n\n\nResearch Interests\n\n\nApplied Econometrics Policy Analysis Agricultural Labor Markets Causal Inference Time Series Analysis\n\n\n\n\nEducation\n\n\n\nTexas Tech University — PhD in Agricultural & Applied Economics (Expected 2027)\n\n\nVirginia Tech University — MS in Agricultural & Applied Economics (2024)"
+    "text": "Code\n\n\n\n\n\n  Tuhinur Rahman Chowdhury\n  PhD Student · Agricultural & Applied Economics · Texas Tech University\n  \n    Applied Economics\n    Machine Learning\n    Causal Inference\n    Quantitative Modeling\n  \n  \n    tuhchowd@ttu.edu\n     ·  Texas Tech University\n  \n\n\n\n  All Posts\n  Research\n  Teaching\n  Code\n\n\n\n\n  \n    Research\n    Impact of agricultural policy on labor markets\n    Using panel data methods to estimate the causal effect of subsidy programs.\n    April 11, 2026\n  \n\n  \n    Code\n    Time series analysis with Python\n    A step-by-step walkthrough of ARIMA modeling using pandas and statsmodels.\n    March 28, 2026\n  \n\n  \n    Teaching\n    Introduction to causal inference\n    Lecture notes and materials from my undergraduate statistics course at Texas Tech.\n    March 10, 2026"
   },
   {
-    "objectID": "posts/first-analysis/index.html",
-    "href": "posts/first-analysis/index.html",
-    "title": "My First Python Analysis",
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
     "section": "",
-    "text": "This is my first Python analysis post!\n\n\nCode\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\ndata = {\"Month\": [\"Jan\",\"Feb\",\"Mar\",\"Apr\"], \n        \"Value\": [120, 145, 133, 160]}\ndf = pd.DataFrame(data)\n\nfig, ax = plt.subplots(figsize=(7, 4))\nax.bar(df[\"Month\"], df[\"Value\"], color=\"#2563eb\")\nax.set_title(\"My First Chart\")\nplt.tight_layout()\nplt.show()"
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
   },
   {
-    "objectID": "posts/first-analysis/index.html#introduction",
-    "href": "posts/first-analysis/index.html#introduction",
-    "title": "My First Python Analysis",
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
     "section": "",
-    "text": "This is my first Python analysis post!\n\n\nCode\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\ndata = {\"Month\": [\"Jan\",\"Feb\",\"Mar\",\"Apr\"], \n        \"Value\": [120, 145, 133, 160]}\ndf = pd.DataFrame(data)\n\nfig, ax = plt.subplots(figsize=(7, 4))\nax.bar(df[\"Month\"], df[\"Value\"], color=\"#2563eb\")\nax.set_title(\"My First Chart\")\nplt.tight_layout()\nplt.show()"
-  },
-  {
-    "objectID": "posts/first-analysis/index.html#conclusion",
-    "href": "posts/first-analysis/index.html#conclusion",
-    "title": "My First Python Analysis",
-    "section": "Conclusion",
-    "text": "Conclusion\nThis is how easy it is to embed Python analysis in a blog post!"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code."
+    "text": "Published Papers\n\n\n\nRisk factors for child stunting in Bangladesh: An analysis using MICS 2019 data\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Winn, S. and Bennie, J.\n\n\nArchives of Public Health, 80(1), 126 · 2022\n\nChild Nutrition Bangladesh View Paper\n\n\n\nFactors associated with stunting and wasting in children under 2 years in Bangladesh\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Afrin, S., Saltmarsh, S. and Winn, S.\n\n\nHeliyon, 6(9), e04849 · 2020\n\nChild Health Bangladesh View Paper\n\n\n\nSocio-economic risk factors for early childhood underweight in Bangladesh\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Saltmarsh, S. and Davis, K.A.\n\n\nGlobalization and Health, 14(1), 54 · 2018\n\nChild Nutrition Socio-economics View Paper\n\n\nWorking Papers\n\n\n\nEffects of Recreational Marijuana Legalization on Agricultural Employment and Wages\n\n\nChowdhury, T.R., Badruddoza, S.\n\n\nWorking Paper · 2025\n\nLabor Markets Agriculture\n\n\n\nLabor market impacts of small rural hospital closures in the USA\n\n\nChowdhury, T.R., Badruddoza, S.\n\n\nWorking Paper · 2024\n\nHealth Economics Rural Policy\n\n\nOngoing Research\n\n\n\nTime-Series Forecasting of Labor Market Outcomes\n\n\nChowdhury, T.R\n\n\nIn Progress · 2026\n\nTime Series Labor Economics\n\n\nConference Presentations\n\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Employment. AAEA Annual Meeting, Denver, CO, July 2025.\n\n\nChowdhury, T.R., Badruddoza, S. Investigating Factors Behind U.S. Rural Hospital Closure. Davis College, TTU, Sep 2024.\n\n\nZhang, L., Chowdhury, T.R. Impacts of Stay-at-home Orders on Housing Markets. SRSA 2023.\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Outcome. SAEA Annual Meeting, Louisville, KY, Feb 2026."
   },
   {
     "objectID": "teaching.html",
@@ -70,25 +63,39 @@
     "text": "Previous Courses\n\n\nAAEC 4984 · Energy Economics\n\n\nVirginia Tech · Spring 2023 · Undergraduate\n\n\n\n\nAAEC 5014 · Applied Economic Analytics\n\n\nVirginia Tech · Fall 2022 · Graduate"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
     "section": "",
-    "text": "Published Papers\n\n\n\nRisk factors for child stunting in Bangladesh: An analysis using MICS 2019 data\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Winn, S. and Bennie, J.\n\n\nArchives of Public Health, 80(1), 126 · 2022\n\nChild Nutrition Bangladesh View Paper\n\n\n\nFactors associated with stunting and wasting in children under 2 years in Bangladesh\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Afrin, S., Saltmarsh, S. and Winn, S.\n\n\nHeliyon, 6(9), e04849 · 2020\n\nChild Health Bangladesh View Paper\n\n\n\nSocio-economic risk factors for early childhood underweight in Bangladesh\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Saltmarsh, S. and Davis, K.A.\n\n\nGlobalization and Health, 14(1), 54 · 2018\n\nChild Nutrition Socio-economics View Paper\n\n\nWorking Papers\n\n\n\nEffects of Recreational Marijuana Legalization on Agricultural Employment and Wages\n\n\nChowdhury, T.R., Badruddoza, S.\n\n\nWorking Paper · 2025\n\nLabor Markets Agriculture\n\n\n\nLabor market impacts of small rural hospital closures in the USA\n\n\nChowdhury, T.R., Badruddoza, S.\n\n\nWorking Paper · 2024\n\nHealth Economics Rural Policy\n\n\nOngoing Research\n\n\n\nTime-Series Forecasting of Labor Market Outcomes\n\n\nChowdhury, T.R\n\n\nIn Progress · 2026\n\nTime Series Labor Economics\n\n\nConference Presentations\n\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Employment. AAEA Annual Meeting, Denver, CO, July 2025.\n\n\nChowdhury, T.R., Badruddoza, S. Investigating Factors Behind U.S. Rural Hospital Closure. Davis College, TTU, Sep 2024.\n\n\nZhang, L., Chowdhury, T.R. Impacts of Stay-at-home Orders on Housing Markets. SRSA 2023.\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Outcome. SAEA Annual Meeting, Louisville, KY, Feb 2026."
+    "text": "This is a post with executable code."
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "posts/first-analysis/index.html",
+    "href": "posts/first-analysis/index.html",
+    "title": "My First Python Analysis",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "This is my first Python analysis post!\n\n\nCode\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\ndata = {\"Month\": [\"Jan\",\"Feb\",\"Mar\",\"Apr\"], \n        \"Value\": [120, 145, 133, 160]}\ndf = pd.DataFrame(data)\n\nfig, ax = plt.subplots(figsize=(7, 4))\nax.bar(df[\"Month\"], df[\"Value\"], color=\"#2563eb\")\nax.set_title(\"My First Chart\")\nplt.tight_layout()\nplt.show()"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "posts/first-analysis/index.html#introduction",
+    "href": "posts/first-analysis/index.html#introduction",
+    "title": "My First Python Analysis",
+    "section": "",
+    "text": "This is my first Python analysis post!\n\n\nCode\nimport matplotlib.pyplot as plt\nimport pandas as pd\n\ndata = {\"Month\": [\"Jan\",\"Feb\",\"Mar\",\"Apr\"], \n        \"Value\": [120, 145, 133, 160]}\ndf = pd.DataFrame(data)\n\nfig, ax = plt.subplots(figsize=(7, 4))\nax.bar(df[\"Month\"], df[\"Value\"], color=\"#2563eb\")\nax.set_title(\"My First Chart\")\nplt.tight_layout()\nplt.show()"
+  },
+  {
+    "objectID": "posts/first-analysis/index.html#conclusion",
+    "href": "posts/first-analysis/index.html#conclusion",
+    "title": "My First Python Analysis",
+    "section": "Conclusion",
+    "text": "Conclusion\nThis is how easy it is to embed Python analysis in a blog post!"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
     "title": "",
     "section": "",
-    "text": "Code\n\n\n\n\n\n  Tuhinur Rahman Chowdhury\n  PhD Student · Agricultural & Applied Economics · Texas Tech University\n  \n    Applied Economics\n    Machine Learning\n    Causal Inference\n    Quantitative Modeling\n  \n  \n    tuhchowd@ttu.edu\n     ·  Texas Tech University\n  \n\n\n\n  All Posts\n  Research\n  Teaching\n  Code\n\n\n\n\n  \n    Research\n    Impact of agricultural policy on labor markets\n    Using panel data methods to estimate the causal effect of subsidy programs.\n    April 11, 2026\n  \n\n  \n    Code\n    Time series analysis with Python\n    A step-by-step walkthrough of ARIMA modeling using pandas and statsmodels.\n    March 28, 2026\n  \n\n  \n    Teaching\n    Introduction to causal inference\n    Lecture notes and materials from my undergraduate statistics course at Texas Tech.\n    March 10, 2026"
+    "text": "Code\n\n\n\n\n\n\n\n\n\nTuhinur Rahman Chowdhury\n\n\nPhD Student | Agricultural & Applied Economics\n\n\nTexas Tech University\n\n\nI am a PhD student in the Department of Agricultural and Applied Economics at Texas Tech University. My research focuses on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis.\n\n\nEmail LinkedIn GitHub\n\n\n\n\n\nResearch Interests\n\n\nApplied Econometrics Policy Analysis Agricultural Labor Markets Causal Inference Time Series Analysis\n\n\n\n\nEducation\n\n\n\nTexas Tech University — PhD in Agricultural & Applied Economics (Expected 2027)\n\n\nVirginia Tech University — MS in Agricultural & Applied Economics (2024)"
   },
   {
     "objectID": "cv.html",

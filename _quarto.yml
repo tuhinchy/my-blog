@@ -16,8 +16,10 @@ website:
         text: Research
       - href: teaching.qmd
         text: Teaching
-      - href: blog.qmd
-        text: Blog
+      - text: "Learning with Tuhinur"
+        menu:
+          - text: "Causal Modeling"
+            href: causal-modeling.qmd
       - href: about.qmd
         text: About
     right:

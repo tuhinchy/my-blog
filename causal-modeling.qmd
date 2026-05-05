@@ -1,0 +1,21 @@
+---
+title: "Causal Modeling"
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div style="padding: 2rem 0.5rem 0.5rem;">
+  <div style="font-size:1.6rem; font-weight:700; color:#1a2744; margin-bottom:0.4rem;">Causal Modeling</div>
+  <div style="font-size:0.95rem; color:#555; max-width:680px; line-height:1.7;">
+    A collection of notes, tutorials, and resources on causal inference — from potential outcomes and DAGs to difference-in-differences, instrumental variables, and regression discontinuity designs.
+  </div>
+  <div style="height:3px; width:48px; background:#1a2744; border-radius:2px; margin-top:1rem;"></div>
+</div>
+
+<div style="padding: 1rem 0.5rem 3rem;">
+  <div style="color:#999; font-size:0.9rem; font-style:italic; margin-top:1rem;">
+    Content coming soon. Check back for notes and tutorials.
+  </div>
+</div>
+```
