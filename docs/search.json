@@ -1,31 +1,24 @@
 [
   {
-    "objectID": "teaching.html",
-    "href": "teaching.html",
-    "title": "Teaching",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Welcome to My Blog!",
     "section": "",
-    "text": "AAEC 2301 | Agricultural Statistics\n\n\nTexas Tech University | Spring 2026 | Undergraduate\n\n\nIntroduction to statistical reasoning and data analysis for economics students.\n\n\nCourse Materials\n\n\n\n\nLecture Notes\n\n\nChapter 1 Chapter 2 Chapter 3 Chapter 4 Chapter 5 Chapter 6 Chapter 7 Chapter 8 Chapter 9 Chapter 10 Chapter 11 Notes Ch 11 Notes Chi-Square\n\n\n\n\nExams\n\n\nExam 1 Exam 2\n\n\n\n\nQuizzes\n\n\nQuiz 1 Quiz 2"
+    "text": "Welcome! I am Tuhinur Rahman Chowdhury, a PhD student and Graduate Instructor in Agricultural and Applied Economics at Texas Tech University. This site is where I share my research on labor markets, agricultural policy, and rural economics, along with course materials for my students and hands-on Python and Stata coding tutorials for fellow researchers and economists."
   },
   {
-    "objectID": "teaching.html#current-courses",
-    "href": "teaching.html#current-courses",
-    "title": "Teaching",
-    "section": "",
-    "text": "AAEC 2301 | Agricultural Statistics\n\n\nTexas Tech University | Spring 2026 | Undergraduate\n\n\nIntroduction to statistical reasoning and data analysis for economics students.\n\n\nCourse Materials\n\n\n\n\nLecture Notes\n\n\nChapter 1 Chapter 2 Chapter 3 Chapter 4 Chapter 5 Chapter 6 Chapter 7 Chapter 8 Chapter 9 Chapter 10 Chapter 11 Notes Ch 11 Notes Chi-Square\n\n\n\n\nExams\n\n\nExam 1 Exam 2\n\n\n\n\nQuizzes\n\n\nQuiz 1 Quiz 2"
+    "objectID": "blog.html#what-you-will-find-here",
+    "href": "blog.html#what-you-will-find-here",
+    "title": "Welcome to My Blog!",
+    "section": "What You Will Find Here",
+    "text": "What You Will Find Here\n\nResearch — working papers, published work and ongoing projects\nTeaching — course materials, lecture notes and problem sets\nBlog Posts — data analysis tutorials using Python and Stata\nCode — reproducible econometric analysis and visualizations\n\nFeel free to reach out at tuhchowd@ttu.edu for collaborations or questions!"
   },
   {
-    "objectID": "teaching.html#previous-courses",
-    "href": "teaching.html#previous-courses",
-    "title": "Teaching",
-    "section": "Previous Courses",
-    "text": "Previous Courses\n\n\nAAEC 4984 · Energy Economics\n\n\nVirginia Tech · Spring 2023 · Undergraduate\n\n\n\n\nAAEC 5014 · Applied Economic Analytics\n\n\nVirginia Tech · Fall 2022 · Graduate"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "",
     "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+    "text": "Code\n\n\n\n\n\n\n\n\n\nTuhinur Rahman Chowdhury\n\n\nPhD Student | Agricultural & Applied Economics\n\n\nTexas Tech University\n\n\nI am a PhD student in the Department of Agricultural and Applied Economics at Texas Tech University. My research focuses on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis.\n\n\nEmail LinkedIn GitHub\n\n\n\n\n\nResearch Interests\n\n\nApplied Econometrics Policy Analysis Agricultural Labor Markets Causal Inference Time Series Analysis\n\n\n\n\nEducation\n\n\n\nTexas Tech University — PhD in Agricultural & Applied Economics (Expected 2027)\n\n\nVirginia Tech University — MS in Agricultural & Applied Economics (2024)"
   },
   {
     "objectID": "posts/first-analysis/index.html",
@@ -49,41 +42,6 @@
     "text": "Conclusion\nThis is how easy it is to embed Python analysis in a blog post!"
   },
   {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\n\nTuhinur Rahman Chowdhury\n\n\ntuhchowd@ttu.edu | +1 701-200-2798 | Texas Tech University\n\n\n\nEducation\n\n\n\nPhD, Agricultural & Applied Economics · Texas Tech University · 2024–Present\n\n\nMS, Agricultural & Applied Economics · Virginia Tech · 2023\n\n\nMS, Agribusiness & Applied Economics · North Dakota State University · 2022\n\n\nBSS, Economics · Shahjalal University of Science & Technology, Bangladesh · 2015\n\n\n\n\n\nPublications\n\n\n\nChowdhury, T.R., et al. (2022). Risk factors for child stunting in Bangladesh. Archives of Public Health, 80(1), 126.\n\n\nChowdhury, T.R., et al. (2020). Factors associated with stunting and wasting in children under 2 years in Bangladesh. Heliyon, 6(9), e04849.\n\n\nChowdhury, T.R., et al. (2018). Socio-economic risk factors for early childhood underweight in Bangladesh. Globalization and Health, 14(1), 54.\n\n\n\n\n\nResearch Experience\n\n\n\nGraduate Research Assistant | Texas Tech University | Jan 2024–PresentSupervisor: Dr. Syed Badruddoza Rural hospital closures on health outcomes Labor market forecasting using linear and nonlinear models Marijuana legalization effects on agricultural employment\n\n\nGraduate Research Assistant | Virginia Tech University | Aug 2023–Jan 2024Supervisor: Dr. Chi Ta· Energy audit mandates using 12-year firm-level panel data\n\n\nGraduate Research Assistant | North Dakota State University | Jan 2021–Aug 2022Supervisor: Dr. Lei Zhang COVID-19 impacts on housing markets\n\n\n\n\n\nTeaching Experience\n\n\n\nGraduate Teaching Assistant | Virginia Tech University · AAEC 4984 Energy Economics · Spring 2023\n\n\nGraduate Teaching Assistant | Virginia Tech University · AAEC 5014 Applied Economic Analytics · Fall 2022\n\n\nLecturer | Metropolitan University, Bangladesh · Economics · 2020\n\n\nLecturer | Feni Girls Cadet College, Bangladesh · Economics · 2020–2021\n\n\n\n\n\nConference Presentations\n\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Employment. AAEA Annual Meeting, Denver, CO, July 2025.\n\n\nChowdhury, T.R., Badruddoza, S. Investigating Factors Behind U.S. Rural Hospital Closure. Davis College, TTU, Sep 2024.\n\n\nZhang, L., Chowdhury, T.R. Impacts of Stay-at-home Orders on Housing Markets. SRSA 2023.\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Outcome. SAEA Annual Meeting, Louisville, KY, Feb 2026.\n\n\n\n\n\nFellowships & Grants\n\n\n\nBayer CropScience Graduate Fellowship | 2024, 2025\n\n\nDepartment Travel Grant | Texas Tech University · 2025, 2026\n\n\nGraduate School Travel Grant | Texas Tech University · 2025\n\n\nAAEA Travel Grant | 2025\n\n\n\n\n\nSkills\n\n\nPython R Stata SPSS SQL LaTeX Tableau"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\n\n\n\n\nTuhinur Rahman Chowdhury\n\n\nPhD Student | Agricultural & Applied Economics\n\n\nTexas Tech University\n\n\nI am a PhD student in the Department of Agricultural and Applied Economics at Texas Tech University. My research focuses on applied econometrics, policy analysis, agricultural labor markets, and rural economic issues, with a focus on using quantitative methods to address real-world challenges. I am especially interested in causal inference, labor economics, and time series analysis.\n\n\nEmail LinkedIn GitHub\n\n\n\n\n\nResearch Interests\n\n\nApplied Econometrics Policy Analysis Agricultural Labor Markets Causal Inference Time Series Analysis\n\n\n\n\nEducation\n\n\n\nTexas Tech University — PhD in Agricultural & Applied Economics (Expected 2027)\n\n\nVirginia Tech University — MS in Agricultural & Applied Economics (2024)"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Welcome to My Blog!",
-    "section": "",
-    "text": "Welcome! I am Tuhinur Rahman Chowdhury, a PhD student and Graduate Instructor in Agricultural and Applied Economics at Texas Tech University. This site is where I share my research on labor markets, agricultural policy, and rural economics, along with course materials for my students and hands-on Python and Stata coding tutorials for fellow researchers and economists."
-  },
-  {
-    "objectID": "blog.html#what-you-will-find-here",
-    "href": "blog.html#what-you-will-find-here",
-    "title": "Welcome to My Blog!",
-    "section": "What You Will Find Here",
-    "text": "What You Will Find Here\n\nResearch — working papers, published work and ongoing projects\nTeaching — course materials, lecture notes and problem sets\nBlog Posts — data analysis tutorials using Python and Stata\nCode — reproducible econometric analysis and visualizations\n\nFeel free to reach out at tuhchowd@ttu.edu for collaborations or questions!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "",
-    "section": "",
-    "text": "Code\n\n\n\n\n\n\nTRC\n\n\n\nTuhinur Rahman Chowdhury\n\n\nPhD Student · Agricultural & Applied Economics · Texas Tech University\n\n\ntuhchowd@ttu.edu\n\n\n\n\nAll Posts Research Teaching Code\n\n\n\n\nResearch\n\nImpact of agricultural policy on labor markets\n\n\nUsing panel data methods to estimate the causal effect of subsidy programs.\n\n\nApril 11, 2026\n\n\n\nCode\n\nTime series analysis with Python\n\n\nA step-by-step walkthrough of ARIMA modeling using pandas and statsmodels.\n\n\nMarch 28, 2026\n\n\n\nTeaching\n\nIntroduction to causal inference\n\n\nLecture notes and materials from my undergraduate statistics course at Texas Tech.\n\n\nMarch 10, 2026\n\n\n\n\n\n\nTopics\n\n\nAll\n\n\nResearch\n\n\nCode\n\n\nTeaching\n\n\nKeywords\n\n\nEconometrics\n\n\nPython\n\n\nLabor Markets\n\n\nYear\n\n\n2026\n\n\n2025"
-  },
-  {
     "objectID": "posts/post-with-code/index.html",
     "href": "posts/post-with-code/index.html",
     "title": "Post With Code",
@@ -91,10 +49,59 @@
     "text": "This is a post with executable code."
   },
   {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "Teaching",
+    "section": "",
+    "text": "AAEC 2301 | Agricultural Statistics\n\n\nTexas Tech University | Spring 2026 | Undergraduate\n\n\nIntroduction to statistical reasoning and data analysis for economics students.\n\n\nCourse Materials\n\n\n\n\nLecture Notes\n\n\nChapter 1 Chapter 2 Chapter 3 Chapter 4 Chapter 5 Chapter 6 Chapter 7 Chapter 8 Chapter 9 Chapter 10 Chapter 11 Notes Ch 11 Notes Chi-Square\n\n\n\n\nExams\n\n\nExam 1 Exam 2\n\n\n\n\nQuizzes\n\n\nQuiz 1 Quiz 2"
+  },
+  {
+    "objectID": "teaching.html#current-courses",
+    "href": "teaching.html#current-courses",
+    "title": "Teaching",
+    "section": "",
+    "text": "AAEC 2301 | Agricultural Statistics\n\n\nTexas Tech University | Spring 2026 | Undergraduate\n\n\nIntroduction to statistical reasoning and data analysis for economics students.\n\n\nCourse Materials\n\n\n\n\nLecture Notes\n\n\nChapter 1 Chapter 2 Chapter 3 Chapter 4 Chapter 5 Chapter 6 Chapter 7 Chapter 8 Chapter 9 Chapter 10 Chapter 11 Notes Ch 11 Notes Chi-Square\n\n\n\n\nExams\n\n\nExam 1 Exam 2\n\n\n\n\nQuizzes\n\n\nQuiz 1 Quiz 2"
+  },
+  {
+    "objectID": "teaching.html#previous-courses",
+    "href": "teaching.html#previous-courses",
+    "title": "Teaching",
+    "section": "Previous Courses",
+    "text": "Previous Courses\n\n\nAAEC 4984 · Energy Economics\n\n\nVirginia Tech · Spring 2023 · Undergraduate\n\n\n\n\nAAEC 5014 · Applied Economic Analytics\n\n\nVirginia Tech · Fall 2022 · Graduate"
+  },
+  {
+    "objectID": "teaching.html#teaching-skills",
+    "href": "teaching.html#teaching-skills",
+    "title": "Teaching",
+    "section": "Teaching Skills",
+    "text": "Teaching Skills\n\n\n\n\nStatistical & Quantitative Methods\n\n\n\nApplied Statistics & Econometrics\n\n\nRegression & Hypothesis Testing\n\n\nData Visualization\n\n\nCausal Inference\n\n\n\n\n\nSoftware & Tools\n\n\n\nR & RStudio\n\n\nStata\n\n\nPython (Pandas, NumPy)\n\n\nQGIS / Spatial Analysis\n\n\n\n\n\nPedagogy\n\n\n\nCurriculum & Syllabus Design\n\n\nActive Learning Techniques\n\n\nOnline & Hybrid Instruction\n\n\nStudent Mentoring & Advising"
+  },
+  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Research",
     "section": "",
     "text": "Published Papers\n\n\n\nRisk factors for child stunting in Bangladesh: An analysis using MICS 2019 data\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Winn, S. and Bennie, J.\n\n\nArchives of Public Health, 80(1), 126 · 2022\n\nChild Nutrition Bangladesh View Paper\n\n\n\nFactors associated with stunting and wasting in children under 2 years in Bangladesh\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Afrin, S., Saltmarsh, S. and Winn, S.\n\n\nHeliyon, 6(9), e04849 · 2020\n\nChild Health Bangladesh View Paper\n\n\n\nSocio-economic risk factors for early childhood underweight in Bangladesh\n\n\nChowdhury, T.R., Chakrabarty, S., Rakib, M., Saltmarsh, S. and Davis, K.A.\n\n\nGlobalization and Health, 14(1), 54 · 2018\n\nChild Nutrition Socio-economics View Paper\n\n\nWorking Papers\n\n\n\nEffects of Recreational Marijuana Legalization on Agricultural Employment and Wages\n\n\nChowdhury, T.R., Badruddoza, S.\n\n\nWorking Paper · 2025\n\nLabor Markets Agriculture\n\n\n\nLabor market impacts of small rural hospital closures in the USA\n\n\nChowdhury, T.R., Badruddoza, S.\n\n\nWorking Paper · 2024\n\nHealth Economics Rural Policy\n\n\nOngoing Research\n\n\n\nTime-Series Forecasting of Labor Market Outcomes\n\n\nChowdhury, T.R\n\n\nIn Progress · 2026\n\nTime Series Labor Economics\n\n\nConference Presentations\n\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Employment. AAEA Annual Meeting, Denver, CO, July 2025.\n\n\nChowdhury, T.R., Badruddoza, S. Investigating Factors Behind U.S. Rural Hospital Closure. Davis College, TTU, Sep 2024.\n\n\nZhang, L., Chowdhury, T.R. Impacts of Stay-at-home Orders on Housing Markets. SRSA 2023.\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Outcome. SAEA Annual Meeting, Louisville, KY, Feb 2026."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\n  Tuhinur Rahman Chowdhury\n  PhD Student · Agricultural & Applied Economics · Texas Tech University\n  \n    Applied Economics\n    Machine Learning\n    Causal Inference\n    Quantitative Modeling\n  \n  \n    tuhchowd@ttu.edu\n     ·  Texas Tech University\n  \n\n\n\n  All Posts\n  Research\n  Teaching\n  Code\n\n\n\n\n  \n    Research\n    Impact of agricultural policy on labor markets\n    Using panel data methods to estimate the causal effect of subsidy programs.\n    April 11, 2026\n  \n\n  \n    Code\n    Time series analysis with Python\n    A step-by-step walkthrough of ARIMA modeling using pandas and statsmodels.\n    March 28, 2026\n  \n\n  \n    Teaching\n    Introduction to causal inference\n    Lecture notes and materials from my undergraduate statistics course at Texas Tech.\n    March 10, 2026"
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "",
+    "section": "",
+    "text": "Code\n\n\n\n\n\n\nTuhinur Rahman Chowdhury\n\n\ntuhchowd@ttu.edu | +1 701-200-2798 | Texas Tech University\n\n\n\nEducation\n\n\n\nPhD, Agricultural & Applied Economics · Texas Tech University · 2024–Present\n\n\nMS, Agricultural & Applied Economics · Virginia Tech · 2023\n\n\nMS, Agribusiness & Applied Economics · North Dakota State University · 2022\n\n\nBSS, Economics · Shahjalal University of Science & Technology, Bangladesh · 2015\n\n\n\n\n\nPublications\n\n\n\nChowdhury, T.R., et al. (2022). Risk factors for child stunting in Bangladesh. Archives of Public Health, 80(1), 126.\n\n\nChowdhury, T.R., et al. (2020). Factors associated with stunting and wasting in children under 2 years in Bangladesh. Heliyon, 6(9), e04849.\n\n\nChowdhury, T.R., et al. (2018). Socio-economic risk factors for early childhood underweight in Bangladesh. Globalization and Health, 14(1), 54.\n\n\n\n\n\nResearch Experience\n\n\n\nGraduate Research Assistant | Texas Tech University | Jan 2024–PresentSupervisor: Dr. Syed Badruddoza Rural hospital closures on health outcomes Labor market forecasting using linear and nonlinear models Marijuana legalization effects on agricultural employment\n\n\nGraduate Research Assistant | Virginia Tech University | Aug 2023–Jan 2024Supervisor: Dr. Chi Ta· Energy audit mandates using 12-year firm-level panel data\n\n\nGraduate Research Assistant | North Dakota State University | Jan 2021–Aug 2022Supervisor: Dr. Lei Zhang COVID-19 impacts on housing markets\n\n\n\n\n\nTeaching Experience\n\n\n\nGraduate Teaching Assistant | Virginia Tech University · AAEC 4984 Energy Economics · Spring 2023\n\n\nGraduate Teaching Assistant | Virginia Tech University · AAEC 5014 Applied Economic Analytics · Fall 2022\n\n\nLecturer | Metropolitan University, Bangladesh · Economics · 2020\n\n\nLecturer | Feni Girls Cadet College, Bangladesh · Economics · 2020–2021\n\n\n\n\n\nConference Presentations\n\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Employment. AAEA Annual Meeting, Denver, CO, July 2025.\n\n\nChowdhury, T.R., Badruddoza, S. Investigating Factors Behind U.S. Rural Hospital Closure. Davis College, TTU, Sep 2024.\n\n\nZhang, L., Chowdhury, T.R. Impacts of Stay-at-home Orders on Housing Markets. SRSA 2023.\n\n\nChowdhury, T.R., Badruddoza, S. Effects of Recreational Marijuana Legalization on Agricultural Outcome. SAEA Annual Meeting, Louisville, KY, Feb 2026.\n\n\n\n\n\nFellowships & Grants\n\n\n\nBayer CropScience Graduate Fellowship | 2024, 2025\n\n\nDepartment Travel Grant | Texas Tech University · 2025, 2026\n\n\nGraduate School Travel Grant | Texas Tech University · 2025\n\n\nAAEA Travel Grant | 2025\n\n\n\n\n\nSkills\n\n\nPython R Stata SPSS SQL LaTeX Tableau"
   }
 ]
