@@ -122,6 +122,21 @@ body {
   color: white !important;
 }
 
+.dropdown-menu {
+  background: #1a2744 !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+}
+
+.dropdown-item {
+  color: rgba(255,255,255,0.85) !important;
+  font-size: 0.88rem;
+}
+
+.dropdown-item:hover {
+  background: rgba(255,255,255,0.1) !important;
+  color: white !important;
+}
+
 .about-bar {
   background: #f0f4fb;
   border-bottom: 1px solid #dde3f0;
