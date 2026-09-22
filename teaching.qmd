@@ -45,6 +45,16 @@ toc: false
 </div>
 </div>
 </div>
+<div style="margin-top:14px; border-top:1px solid #dde3f0; padding-top:14px;">
+<div style="background:white; border:1px solid #c7d8f7; border-radius:6px; padding:14px;">
+<div style="font-size:0.85rem; font-weight:600; color:#1a2744; margin-bottom:6px;">📊 Statistics with Excel</div>
+<div style="font-size:0.82rem; color:#555; margin-bottom:10px; line-height:1.6;">Chapter-by-chapter Excel tutorials covering descriptive statistics, probability, distributions, hypothesis testing, and regression — with agricultural economics examples throughout.</div>
+<div style="font-size:0.82rem; color:#777; margin-bottom:10px; line-height:1.9;">
+Ch 1: Data Collection &nbsp;·&nbsp; Ch 2: Tables &amp; Graphs &nbsp;·&nbsp; Ch 3: Numerical Summaries &nbsp;·&nbsp; Ch 4: Bivariate Relations &nbsp;·&nbsp; Ch 5: Probability &nbsp;·&nbsp; Ch 6: Discrete Distributions &nbsp;·&nbsp; Ch 7: Normal Distribution &nbsp;·&nbsp; Ch 8: Sampling Distributions &nbsp;·&nbsp; Ch 9: Confidence Intervals &nbsp;·&nbsp; Ch 10: Hypothesis Tests &nbsp;·&nbsp; Ch 11: Two-Population Tests &nbsp;·&nbsp; Ch 12: Chi-Square &amp; Regression &nbsp;·&nbsp; App B: ANOVA
+</div>
+<a href="stats-excel.html" style="display:inline-block; background:#1a2744; color:white; font-size:0.82rem; font-weight:500; padding:7px 16px; border-radius:5px; text-decoration:none;">View Excel Lectures →</a>
+</div>
+</div>
 </div>
 
 ## Previous Courses

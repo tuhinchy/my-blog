@@ -1,0 +1,611 @@
+---
+title: ""
+page-layout: full
+toc: true
+toc-depth: 2
+---
+
+```{=html}
+<div class="hero-banner">
+  <div class="hero-name">Statistics with Excel</div>
+  <div class="hero-role">AAEC 2301 &middot; Agricultural Statistics &middot; Texas Tech University</div>
+  <div class="hero-tags">
+    <span class="hero-tag"><span class="dot" style="background:#60a5fa;"></span>Data Analysis ToolPak</span>
+    <span class="hero-tag"><span class="dot" style="background:#34d399;"></span>Statistical Functions</span>
+    <span class="hero-tag"><span class="dot" style="background:#f59e0b;"></span>Visualization</span>
+    <span class="hero-tag"><span class="dot" style="background:#a78bfa;"></span>Hypothesis Testing</span>
+    <span class="hero-tag"><span class="dot" style="background:#f87171;"></span>Regression</span>
+  </div>
+</div>
+
+<div style="background:white; border:1px solid #dde3f0; border-radius:8px; padding:16px 20px; margin-bottom:1.8rem; font-size:0.88rem; color:#444; line-height:1.7;">
+  <strong style="color:#1a2744;">Before you start:</strong> Enable the <strong>Data Analysis ToolPak</strong> add-in in Excel.
+  Go to <em>File → Options → Add-ins → Manage: Excel Add-ins → Go</em>, then check <em>Analysis ToolPak</em> and click OK.
+  This unlocks tools for regression, t-tests, ANOVA, histograms, descriptive statistics, and more. All examples below use agricultural and economic datasets to match the context of this course.
+</div>
+```
+
+## Chapter 1: Data Collection
+
+### What This Chapter Is About
+
+Good statistics starts with good data. Before any analysis, you need to know where your data came from, how it was collected, and whether it is representative of the population you care about. In agricultural economics, this means understanding farm surveys, USDA datasets, and sampling designs for crop yield studies.
+
+### Key Excel Skills
+
+| Task | Excel Tool / Function |
+|------|----------------------|
+| Enter and label a dataset | Manual entry with row/column headers |
+| Generate random numbers | `=RAND()` and `=RANDBETWEEN(low, high)` |
+| Select a simple random sample | `RAND()` + `RANK()` to assign random order |
+| Sort data | *Data → Sort* |
+| Filter rows by condition | *Data → Filter* |
+
+### Step-by-Step: Simple Random Sampling
+
+Suppose you have a list of 200 farms in Lubbock County and you want to randomly select 30 for a survey.
+
+1. In column A, enter farm IDs 1 through 200.
+2. In column B, type `=RAND()` in cell B1 and drag it down to B200. This assigns each farm a random number.
+3. In column C, use `=RANK(B1, $B$1:$B$200, 1)` to rank farms from lowest to highest random number.
+4. Sort the entire table by column C ascending.
+5. The first 30 rows are your simple random sample.
+
+> **Tip:** Press `F9` to regenerate all random numbers. To freeze the sample, copy column B and paste as *Values Only* before sorting.
+
+### Types of Sampling Designs
+
+- **Simple random sampling**: Every unit has an equal chance — use `RAND()` as above.
+- **Stratified sampling**: Divide farms by size (small, medium, large), then sample randomly within each stratum using `RANDBETWEEN`.
+- **Systematic sampling**: Select every *k*th farm from a sorted list. Compute *k = N/n* (e.g., every 7th farm if N=200, n=30).
+
+### Common Mistake
+
+Using `RAND()` directly in a formula without fixing the value means your sample changes every time Excel recalculates. Always paste as values before proceeding.
+
+---
+
+## Chapter 2: Summarizing Data in Tables and Graphs
+
+### What This Chapter Is About
+
+Raw numbers are hard to interpret. Frequency distributions, bar charts, and histograms compress hundreds of observations into patterns you can communicate and act on. This chapter teaches you to build those summaries in Excel.
+
+### Key Excel Skills
+
+| Task | Excel Tool / Function |
+|------|----------------------|
+| Count occurrences of a category | `=COUNTIF(range, criteria)` |
+| Build a frequency table | `COUNTIF` for each category |
+| Compute relative frequency | `=count/total` |
+| Bar chart / pie chart | *Insert → Charts* |
+| Histogram (continuous data) | *Data → Data Analysis → Histogram* |
+| Pivot table for cross-tabs | *Insert → PivotTable* |
+
+### Step-by-Step: Frequency Table for Crop Types
+
+Suppose column A contains the crop type (Corn, Cotton, Sorghum, Wheat) for 80 farms.
+
+1. List the four crop names in cells D1:D4.
+2. In E1, enter `=COUNTIF($A$1:$A$80, D1)`. Copy down to E4.
+3. In F1, enter `=E1/SUM($E$1:$E$4)`. Copy down to F4. Format as percentage. This gives relative frequency.
+4. Select D1:E4 and insert a **Bar Chart** (*Insert → Bar Chart → Clustered Bar*).
+5. Right-click the chart → *Add Data Labels* to show counts on each bar.
+
+### Step-by-Step: Histogram for Continuous Data
+
+Suppose column A has 60 corn yields (bushels/acre).
+
+1. Decide on bin edges, e.g., 80, 100, 120, 140, 160, 180. Enter them in column B.
+2. Go to *Data → Data Analysis → Histogram*.
+3. Set *Input Range* to your data and *Bin Range* to column B.
+4. Check *Chart Output*. Click OK.
+5. Excel produces a frequency table and a histogram. Right-click the histogram bars and set *Gap Width* to 0 to remove gaps (histograms have no gaps; bar charts do).
+
+### Shapes to Recognize
+
+- **Symmetric / Bell-shaped**: values cluster around the center.
+- **Right-skewed**: a long tail on the right — common in income data.
+- **Left-skewed**: a long tail on the left.
+- **Bimodal**: two humps — may indicate two distinct sub-populations.
+
+---
+
+## Chapter 3: Numerically Summarizing Data
+
+### What This Chapter Is About
+
+A single number can summarize a whole distribution. This chapter covers measures of center (mean, median, mode) and spread (range, standard deviation, variance, IQR). Excel's *Descriptive Statistics* tool produces all of these at once.
+
+### Key Excel Skills
+
+| Statistic | Excel Function |
+|-----------|---------------|
+| Mean | `=AVERAGE(range)` |
+| Median | `=MEDIAN(range)` |
+| Mode | `=MODE.SNGL(range)` |
+| Standard deviation (sample) | `=STDEV.S(range)` |
+| Variance (sample) | `=VAR.S(range)` |
+| Range | `=MAX(range) - MIN(range)` |
+| Interquartile range | `=QUARTILE.INC(range,3) - QUARTILE.INC(range,1)` |
+| Percentile | `=PERCENTILE.INC(range, k)` where k is 0–1 |
+| All at once | *Data → Data Analysis → Descriptive Statistics* |
+
+### Step-by-Step: Descriptive Statistics Tool
+
+1. Enter cotton yield data (lbs/acre) in column A, rows 1–50.
+2. Go to *Data → Data Analysis → Descriptive Statistics*.
+3. Set *Input Range* to `$A$1:$A$50`. Check *Labels in first row* if row 1 is a header.
+4. Check **Summary Statistics**, set output to a new worksheet, and click OK.
+5. Excel returns: Mean, Standard Error, Median, Mode, Standard Deviation, Sample Variance, Kurtosis, Skewness, Range, Minimum, Maximum, Sum, Count.
+
+### Five-Number Summary and Box Plots
+
+Excel does not have a native box plot formula (prior to Excel 2016), but you can build one:
+
+1. Compute MIN, Q1 (`=QUARTILE.INC(data,1)`), Median, Q3 (`=QUARTILE.INC(data,3)`), MAX.
+2. In Excel 2016+: select your data, *Insert → Insert Statistic Chart → Box and Whisker*.
+
+### Interpreting Standard Deviation
+
+A standard deviation of 18 lbs/acre for cotton yield means most farms fall within 18 lbs/acre of the mean. Combined with the **Empirical Rule**: roughly 68% of values fall within 1 SD, 95% within 2 SD, and 99.7% within 3 SD of the mean — assuming the distribution is approximately bell-shaped.
+
+---
+
+## Chapter 4: Describing the Relation between Two Variables
+
+### What This Chapter Is About
+
+Do farms with more irrigation achieve higher yields? Does fertilizer price correlate with application rate? This chapter introduces scatter plots, correlation, and simple linear regression — the foundation of empirical economics.
+
+### Key Excel Skills
+
+| Task | Excel Tool / Function |
+|------|----------------------|
+| Scatter plot | *Insert → Scatter Chart* |
+| Correlation coefficient | `=CORREL(x_range, y_range)` |
+| Slope of regression line | `=SLOPE(y_range, x_range)` |
+| Intercept | `=INTERCEPT(y_range, x_range)` |
+| R-squared | `=RSQ(y_range, x_range)` |
+| Full regression output | *Data → Data Analysis → Regression* |
+
+### Step-by-Step: Scatter Plot and Correlation
+
+Suppose column A has water application (acre-inches) and column B has corn yield (bu/acre) for 45 farms.
+
+1. Select both columns and insert a **Scatter Plot** (*Insert → Scatter → Scatter with only Markers*).
+2. Right-click a data point → *Add Trendline* → select *Linear* → check *Display Equation on chart* and *Display R-squared value*.
+3. In a cell, type `=CORREL(A2:A46, B2:B46)`. A value of 0.78 indicates a strong positive linear relationship.
+
+### Step-by-Step: Regression with the ToolPak
+
+1. *Data → Data Analysis → Regression*.
+2. Set *Y Range* (yield) and *X Range* (water applied). Check *Labels* if your first row has headers.
+3. Check *Residuals* and *Line Fit Plots*. Click OK.
+4. Excel outputs: **Coefficients** (slope and intercept), **R Square**, **Standard Error**, **F-statistic**, and **p-values** for each coefficient.
+
+### Reading the Regression Table
+
+- **Intercept**: predicted yield when water = 0.
+- **Slope (X coefficient)**: for each additional acre-inch of water, yield changes by this amount.
+- **R Square**: proportion of variation in yield explained by water application.
+- **p-value < 0.05**: the slope is statistically significant.
+
+### Caution
+
+Correlation measures linear association only. A correlation near zero does not mean no relationship — there could be a strong nonlinear pattern. Always look at the scatter plot first.
+
+---
+
+## Chapter 5: Probability
+
+### What This Chapter Is About
+
+Probability underpins all of statistics. Rather than complex formulas, Excel lets you compute empirical probabilities directly from data and perform simple set calculations using `COUNTIF`.
+
+### Key Excel Skills
+
+| Task | Excel Tool / Function |
+|------|----------------------|
+| Count outcomes | `=COUNTIF(range, criteria)` |
+| Count AND conditions | `=COUNTIFS(r1, c1, r2, c2)` |
+| Compute proportion | `=count / COUNTA(range)` |
+| Complement | `= 1 - P(A)` |
+
+### Step-by-Step: Empirical Probability
+
+Suppose you have data on 300 farm observations. Column A records whether a farm used precision irrigation (Yes/No) and column B records whether the farm had above-average yield (Yes/No).
+
+1. `=COUNTIF(A2:A301, "Yes")` → count of farms using precision irrigation.
+2. `=COUNTIFS(A2:A301, "Yes", B2:B301, "Yes")` → count using irrigation AND having high yield.
+3. Divide by 300 for probabilities.
+4. P(High Yield | Irrigation) = P(High Yield AND Irrigation) / P(Irrigation).
+
+### Constructing a Contingency Table
+
+1. Use *Insert → PivotTable* with column A as rows, column B as columns, and count of observations as values.
+2. This gives a 2×2 table of joint frequencies. Divide each cell by the total to get joint probabilities.
+3. Row and column totals give marginal probabilities.
+
+### Checking Independence
+
+Two events A and B are independent if P(A and B) = P(A) × P(B). Compute both sides in Excel and compare. If they're equal (within rounding), A and B are independent.
+
+---
+
+## Chapter 6: Discrete Probability Distributions
+
+### What This Chapter Is About
+
+Some outcomes are counts: the number of diseased plants in a field, the number of farms applying for a loan. The binomial and Poisson distributions model these. Excel has built-in functions for both.
+
+### Key Excel Skills
+
+| Task | Excel Function |
+|------|---------------|
+| Binomial probability P(X = k) | `=BINOM.DIST(k, n, p, FALSE)` |
+| Binomial cumulative P(X ≤ k) | `=BINOM.DIST(k, n, p, TRUE)` |
+| Poisson probability P(X = k) | `=POISSON.DIST(k, lambda, FALSE)` |
+| Poisson cumulative P(X ≤ k) | `=POISSON.DIST(k, lambda, TRUE)` |
+| Expected value (manual) | `=SUMPRODUCT(values, probabilities)` |
+
+### Step-by-Step: Binomial Distribution
+
+An agricultural extension survey finds that 40% of small farms adopt a new pest-control method. You randomly select 10 farms. What is the probability that exactly 4 adopt it?
+
+1. In any cell: `=BINOM.DIST(4, 10, 0.4, FALSE)` → result ≈ 0.2508.
+2. For "at most 4": `=BINOM.DIST(4, 10, 0.4, TRUE)` → cumulative probability.
+3. For "more than 4": `= 1 - BINOM.DIST(4, 10, 0.4, TRUE)`.
+
+### Building a Probability Distribution Table
+
+1. Enter k values (0 through 10) in column A.
+2. In column B: `=BINOM.DIST(A2, 10, 0.4, FALSE)` and drag down.
+3. Insert a **Bar Chart** (not a histogram) to visualize the distribution shape.
+4. Expected value: `=SUMPRODUCT(A2:A12, B2:B12)` should equal n × p = 10 × 0.4 = 4.
+
+### Step-by-Step: Poisson Distribution
+
+A field experiences an average of 3 insect infestations per season. What is P(X = 5)?
+
+1. `=POISSON.DIST(5, 3, FALSE)` → P(X = 5) ≈ 0.1008.
+2. `=POISSON.DIST(5, 3, TRUE)` → P(X ≤ 5) ≈ 0.9161.
+
+---
+
+## Chapter 7: The Normal Probability Distribution
+
+### What This Chapter Is About
+
+The normal distribution is the cornerstone of statistical inference. Crop yields, soil nutrient levels, and many economic outcomes follow approximately normal distributions. Excel's normal functions let you compute probabilities and find cutoff values without z-tables.
+
+### Key Excel Skills
+
+| Task | Excel Function |
+|------|---------------|
+| P(X ≤ x) for normal dist. | `=NORM.DIST(x, mean, sd, TRUE)` |
+| Find x given P(X ≤ x) = p | `=NORM.INV(p, mean, sd)` |
+| Standardize: z = (x − μ)/σ | `=STANDARDIZE(x, mean, sd)` |
+| P(Z ≤ z) for standard normal | `=NORM.S.DIST(z, TRUE)` |
+| Find z given P(Z ≤ z) = p | `=NORM.S.INV(p)` |
+
+### Step-by-Step: Computing Normal Probabilities
+
+Wheat yields in a region are normally distributed with mean μ = 45 bu/acre and σ = 8 bu/acre.
+
+- **P(X < 50)**: `=NORM.DIST(50, 45, 8, TRUE)` → ≈ 0.734.
+- **P(X > 55)**: `= 1 - NORM.DIST(55, 45, 8, TRUE)` → ≈ 0.106.
+- **P(40 < X < 55)**: `=NORM.DIST(55,45,8,TRUE) - NORM.DIST(40,45,8,TRUE)` → ≈ 0.654.
+
+### Step-by-Step: Finding a Percentile
+
+What yield value marks the 90th percentile?
+
+`=NORM.INV(0.90, 45, 8)` → ≈ 55.25 bu/acre.
+
+### Drawing the Normal Curve in Excel
+
+1. In column A, create x values from (mean − 4σ) to (mean + 4σ) in small steps, e.g., `=13` to `77` in increments of 1.
+2. In column B: `=NORM.DIST(A2, 45, 8, FALSE)` — this gives the PDF height (not probability). Drag down.
+3. Insert a **Line Chart** using columns A and B. This draws the bell curve.
+
+### Checking Normality
+
+Use *Data → Data Analysis → Descriptive Statistics* and check the Skewness and Kurtosis values. Skewness near 0 and Kurtosis near 3 (or Excess Kurtosis near 0) suggest normality.
+
+---
+
+## Chapter 8: Sampling Distributions
+
+### What This Chapter Is About
+
+A statistic computed from a sample (like the sample mean) is itself random — it changes with each new sample. The sampling distribution describes this variability. Understanding it is what makes confidence intervals and hypothesis tests valid.
+
+### Key Concepts to Explore in Excel
+
+The **Central Limit Theorem** states that for large enough samples, the distribution of the sample mean is approximately normal — regardless of the population's shape.
+
+### Step-by-Step: Simulating the Sampling Distribution of X̄
+
+1. Simulate a skewed population: in column A (rows 1–1000), enter `=RANDBETWEEN(1,100)` — this is roughly uniform. Or use `=EXPON.INV(RAND(),0.05)` for exponential data.
+2. Freeze the values: select all, Copy, then Paste Special → Values.
+3. Now take 200 samples of size n=30 each. In a separate sheet, create a 200×30 matrix. Each cell: `=INDEX(Sheet1!$A$1:$A$1000, RANDBETWEEN(1,1000))`.
+4. In the next column, compute the row mean: `=AVERAGE(A1:AD1)` for each of the 200 rows.
+5. Create a **Histogram** of the 200 sample means. Even if the original data was skewed, this distribution of means will look approximately normal.
+
+### Standard Error
+
+The standard error of the mean is σ/√n. In Excel:
+
+- If you know σ: `= sigma / SQRT(n)`
+- From data: `= STDEV.S(data) / SQRT(COUNT(data))`
+
+The Descriptive Statistics tool reports the Standard Error directly.
+
+### Key Takeaway
+
+Larger sample sizes produce sampling distributions that are narrower (smaller SE) and more normal. This is why larger samples give more precise estimates.
+
+---
+
+## Chapter 9: Estimating the Value of a Parameter
+
+### What This Chapter Is About
+
+We rarely know the true population mean. Confidence intervals let us use sample data to estimate where the true parameter likely falls, with a stated level of confidence (usually 90%, 95%, or 99%).
+
+### Key Excel Skills
+
+| Task | Excel Function / Tool |
+|------|-----------------------|
+| Margin of error (σ known) | `=CONFIDENCE.NORM(alpha, sigma, n)` |
+| Margin of error (σ unknown, use t) | `=CONFIDENCE.T(alpha, stdev_s, n)` |
+| t critical value | `=T.INV.2T(alpha, df)` where df = n − 1 |
+| z critical value | `=NORM.S.INV(1 - alpha/2)` |
+| Full CI from Descriptive Stats | *Data Analysis → Descriptive Statistics → Confidence Level* |
+
+### Step-by-Step: 95% Confidence Interval for Mean Yield
+
+Suppose you sampled n = 36 farms with a sample mean of x̄ = 48 bu/acre and s = 10 bu/acre.
+
+1. Compute SE: `= 10 / SQRT(36)` → 1.667.
+2. Find t*: `=T.INV.2T(0.05, 35)` → ≈ 2.030.
+3. Margin of error: `= 2.030 * 1.667` → ≈ 3.38.
+4. CI: (48 − 3.38, 48 + 3.38) = **(44.62, 51.38) bu/acre**.
+
+Or use the shortcut: `=CONFIDENCE.T(0.05, 10, 36)` returns the margin of error directly.
+
+### Using the Descriptive Statistics Tool
+
+1. *Data → Data Analysis → Descriptive Statistics*.
+2. Check **Confidence Level for Mean** and enter 95%.
+3. The output includes the confidence interval margin alongside the mean — add/subtract it from the mean to get the interval bounds.
+
+### Confidence Interval for a Proportion
+
+Suppose 42 out of 100 farms adopted cover cropping. The sample proportion is p̂ = 0.42.
+
+1. SE of proportion: `=SQRT(0.42 * (1-0.42) / 100)` → ≈ 0.0494.
+2. z*: `=NORM.S.INV(0.975)` → 1.96.
+3. Margin: `=1.96 * 0.0494` → ≈ 0.097.
+4. CI: **(0.323, 0.517)** — we are 95% confident between 32.3% and 51.7% of farms use cover cropping.
+
+### Interpreting the Interval
+
+"95% confident" means: if we repeated this sampling process 100 times, roughly 95 of those intervals would contain the true population mean. It does NOT mean there is a 95% chance the true mean is in this specific interval.
+
+---
+
+## Chapter 10: Hypothesis Tests Regarding a Parameter
+
+### What This Chapter Is About
+
+Hypothesis testing is the formal framework for deciding whether data provides enough evidence to reject a claim about a population. Is the average farm income above $50,000? Has a new fertilizer increased average yield beyond 45 bu/acre?
+
+### Key Excel Skills
+
+| Test | Excel Tool |
+|------|-----------|
+| One-sample t-test (manual) | Compute t = (x̄ − μ₀) / (s/√n), then p-value via `T.DIST.2T` |
+| p-value for t-statistic (two-tailed) | `=T.DIST.2T(ABS(t_stat), df)` |
+| p-value (one-tailed, right) | `=T.DIST.RT(t_stat, df)` |
+| p-value (one-tailed, left) | `=T.DIST(t_stat, df, TRUE)` |
+| t critical value | `=T.INV.2T(alpha, df)` |
+
+### Step-by-Step: One-Sample t-Test
+
+**Claim**: The mean corn yield in the region exceeds 42 bu/acre.
+
+- H₀: μ = 42 &nbsp; H₁: μ > 42 (right-tailed)
+- Sample: n = 25, x̄ = 45.2, s = 9.5.
+
+1. Compute t: `= (45.2 - 42) / (9.5 / SQRT(25))` → t = 3.2 / 1.9 = **1.684**.
+2. One-tailed p-value: `=T.DIST.RT(1.684, 24)` → ≈ **0.053**.
+3. At α = 0.05: p-value 0.053 > 0.05. **Fail to reject H₀**.
+4. At α = 0.10: p-value 0.053 < 0.10. **Reject H₀** — evidence supports μ > 42.
+
+### Decision Rules
+
+| Comparison | Decision |
+|------------|---------|
+| p-value < α | Reject H₀ |
+| p-value ≥ α | Fail to reject H₀ |
+| \|t\| > t* | Reject H₀ |
+
+### Type I and Type II Errors in Context
+
+- **Type I error** (α): Concluding yields increased when they did not — wasting money on an ineffective fertilizer.
+- **Type II error** (β): Missing a real yield improvement — failing to adopt a beneficial technology.
+
+### Testing a Proportion
+
+**Claim**: More than 30% of farms have adopted GPS-guided equipment.
+
+- Sample: n = 120, p̂ = 0.38.
+- z = (0.38 − 0.30) / √(0.30×0.70/120) = 0.08 / 0.0418 = **1.913**.
+- p-value (right-tailed): `= 1 - NORM.S.DIST(1.913, TRUE)` → ≈ **0.028**.
+- At α = 0.05: Reject H₀. Evidence supports > 30% adoption.
+
+---
+
+## Chapter 11: Inference on Two Population Parameters
+
+### What This Chapter Is About
+
+You often want to compare two groups — irrigated vs. non-irrigated farms, organic vs. conventional yields, income before and after a policy change. The two-sample t-test and paired t-test handle these comparisons.
+
+### Key Excel Skills
+
+| Test | Excel Tool |
+|------|-----------|
+| Two-sample t-test (equal variances) | *Data Analysis → t-Test: Two-Sample Assuming Equal Variances* |
+| Two-sample t-test (unequal variances) | *Data Analysis → t-Test: Two-Sample Assuming Unequal Variances* |
+| Paired t-test | *Data Analysis → t-Test: Paired Two Sample for Means* |
+| F-test for equal variances | *Data Analysis → F-Test Two-Sample for Variances* |
+
+### Step-by-Step: Independent Two-Sample t-Test
+
+**Question**: Is average cotton yield different between drip-irrigated and furrow-irrigated farms?
+
+- Column A: yields for 20 drip-irrigated farms.
+- Column B: yields for 20 furrow-irrigated farms.
+
+1. First, run the **F-test** (*Data Analysis → F-Test Two-Sample for Variances*) to check if variances are equal (p-value of F-test > 0.05 = assume equal variances).
+2. Then *Data → Data Analysis → t-Test: Two-Sample Assuming Equal Variances* (or unequal, based on step 1).
+3. Set Variable 1 Range to column A and Variable 2 Range to column B.
+4. Set Hypothesized Mean Difference to 0, alpha to 0.05. Click OK.
+5. Read the output: **t Stat**, **P(T<=t) two-tail**, and **t Critical two-tail**.
+
+### Step-by-Step: Paired t-Test
+
+**Question**: Did a new soil amendment increase yield on the same farms?
+
+- Column A: yield before amendment.
+- Column B: yield after amendment (same farms).
+
+1. *Data → Data Analysis → t-Test: Paired Two Sample for Means*.
+2. Variable 1 = before; Variable 2 = after. H₀: mean difference = 0.
+3. Excel reports the mean difference, t-statistic, and p-value.
+
+### When to Use Which Test
+
+| Situation | Test |
+|-----------|------|
+| Two separate groups, variances equal | Two-sample t (equal variances) |
+| Two separate groups, variances different | Welch's t (unequal variances) |
+| Same subjects measured twice | Paired t-test |
+
+### Confidence Interval for the Difference
+
+Excel does not output a CI directly from the two-sample t-test, but you can compute it:
+
+- CI = (x̄₁ − x̄₂) ± t* × SE_diff
+- Where SE_diff is in the ToolPak output as *Standard Error* of the difference.
+
+---
+
+## Chapter 12: Additional Inferential Methods
+
+### What This Chapter Is About
+
+This chapter covers the chi-square test for categorical data and extends linear regression to inference — testing whether predictors are statistically significant and building prediction intervals.
+
+### Part A: Chi-Square Tests
+
+The chi-square test asks whether observed category frequencies differ from what we'd expect under some hypothesis.
+
+| Task | Excel Function / Tool |
+|------|-----------------------|
+| Chi-square goodness-of-fit | `=CHISQ.TEST(observed_range, expected_range)` — returns p-value |
+| Chi-square test of independence | `=CHISQ.TEST(observed_table, expected_table)` |
+| Chi-square critical value | `=CHISQ.INV.RT(alpha, df)` |
+
+#### Step-by-Step: Test of Independence
+
+**Question**: Is crop type (Corn/Cotton/Sorghum) independent of farm size (Small/Large)?
+
+1. Build a 3×2 observed frequency table from your data using COUNTIFS.
+2. Compute expected frequencies: E = (Row Total × Column Total) / Grand Total for each cell.
+3. Use `=CHISQ.TEST(observed_range, expected_range)` — this returns the **p-value** directly.
+4. Compute χ² statistic manually: `=SUMPRODUCT((observed-expected)^2 / expected)`.
+5. df = (rows−1)(columns−1) = (3−1)(2−1) = 2.
+6. Compare p-value to α = 0.05. If p < 0.05, crop type and farm size are **not** independent.
+
+### Part B: Regression Inference
+
+Run a regression (*Data Analysis → Regression*) and examine the output for statistical inference.
+
+#### Key Output to Read
+
+| Output Field | What It Tells You |
+|--------------|------------------|
+| R Square | % of variation explained by the model |
+| Significance F | p-value for overall model significance |
+| Coefficients | Estimated slope(s) and intercept |
+| P-value (for each coefficient) | Is this variable a significant predictor? |
+| Lower/Upper 95% | Confidence interval for each coefficient |
+
+#### Step-by-Step: Prediction in Excel
+
+After running regression with fertilizer application (X) predicting yield (Y):
+
+1. From the output, note the intercept (b₀) and slope (b₁).
+2. For a new farm applying x = 120 lbs fertilizer/acre: predicted yield = `=b0 + b1*120`.
+3. To compute a **prediction interval** manually:
+   - SE_pred = s × √(1 + 1/n + (x* − x̄)² / Σ(xi − x̄)²)
+   - Prediction interval: ŷ ± t* × SE_pred
+
+#### Multiple Regression
+
+If you have more than one predictor (e.g., fertilizer and irrigation water), add all X columns in the *Input X Range* of the Regression tool. Excel handles multiple predictors automatically and provides a coefficient and p-value for each.
+
+---
+
+## Appendix B: One-Way ANOVA
+
+### What This Chapter Is About
+
+When you want to compare means across three or more groups simultaneously — e.g., four fertilizer types, three irrigation regimes — use Analysis of Variance (ANOVA) rather than running multiple t-tests.
+
+### Key Excel Tool
+
+*Data → Data Analysis → ANOVA: Single Factor*
+
+### Step-by-Step: One-Way ANOVA
+
+**Question**: Does mean corn yield differ across four fertilizer application rates (Low, Medium, High, Very High)?
+
+1. Organize data: each column = one group (e.g., column A = Low, B = Medium, C = High, D = Very High). Each row = one observation within that group (groups can have unequal sizes).
+2. *Data → Data Analysis → ANOVA: Single Factor*.
+3. Set *Input Range* to all four columns. Check *Labels in First Row* if headers are included. Set alpha = 0.05.
+4. Click OK.
+
+### Reading the ANOVA Output
+
+| Output | Meaning |
+|--------|---------|
+| **F statistic** | Ratio of between-group variance to within-group variance |
+| **P-value** | Probability of seeing this F by chance if all means are equal |
+| **F crit** | Critical value at α = 0.05 |
+
+- If **p-value < 0.05**: At least one group mean is significantly different. Reject H₀: μ₁ = μ₂ = μ₃ = μ₄.
+- If **p-value ≥ 0.05**: No significant difference among groups.
+
+### After ANOVA: Post-Hoc Tests
+
+ANOVA tells you *that* a difference exists, not *which* groups differ. To compare all pairs, you would use Tukey's HSD or Bonferroni correction — these require manual computation or a statistical package. In Excel, the most practical approach is to run pairwise t-tests with a Bonferroni-adjusted α = 0.05 / number_of_comparisons.
+
+### Two-Way ANOVA
+
+If you have two factors (e.g., fertilizer type and irrigation level), use *Data Analysis → ANOVA: Two-Factor With Replication* (or without replication if you have only one observation per combination). This tests main effects of each factor and their interaction effect.
+
+---
+
+```{=html}
+<div style="margin-top:3rem; padding:1.4rem 1.8rem; background:#f0f4fb; border:1px solid #dde3f0; border-radius:8px; font-size:0.87rem; color:#444; line-height:1.8;">
+  <strong style="color:#1a2744; display:block; margin-bottom:0.5rem;">Course Resources</strong>
+  These lecture guides accompany <em>Fundamentals of Statistics</em> by Sullivan (5th ed.).
+  All Excel examples are designed for agricultural and economic datasets.
+  Return to the <a href="teaching.qmd" style="color:#1a2744; font-weight:500;">Teaching page</a> to access lecture notes, exams, and quizzes.
+</div>
+```

@@ -34,5 +34,8 @@
   },
   "time-series.qmd": {
     "time-series.html": "770bd5a1"
+  },
+  "stats-excel.qmd": {
+    "stats-excel.html": "7407f8b6"
   }
 }
