@@ -254,6 +254,213 @@ A single number can summarize a whole distribution. This chapter covers measures
 </div>
 ```
 
+### Worked Example: Manual Calculation of Mean, Variance, and SD
+
+The ToolPak gives you results in one click, but tracing through the manual steps builds real intuition for what these statistics measure. The spreadsheet below is exactly what you would build in Excel: a data column, a mean column, a deviation column (X &minus; x̄), and a squared deviation column — followed by step-by-step manual calculations on the left and equivalent Excel shortcuts on the right.
+
+**Agricultural Example — Cotton yield (lbs/acre) for 9 farms in Lubbock County:**
+
+```{=html}
+<div class="xl-wrap">
+  <div class="xl-title">
+    <div class="xl-win-ctrl"><span class="xl-btn" style="background:#ff5f57"></span><span class="xl-btn" style="background:#febc2e"></span><span class="xl-btn" style="background:#28c840"></span></div>
+    📗 CottonYield_Manual.xlsx &mdash; Excel
+  </div>
+  <div class="xl-fbar">
+    <span class="xl-fbar-ref">D9</span>
+    <span class="xl-fx">fx</span>
+    <span class="xl-formula">=AVERAGE($C$9:$C$17)</span>
+  </div>
+  <div class="xl-grid">
+    <table class="xl-t">
+      <tr>
+        <th class="xl-ch corner"></th>
+        <th class="xl-ch" style="min-width:130px">B</th>
+        <th class="xl-ch" style="min-width:75px">C</th>
+        <th class="xl-ch" style="min-width:75px">D</th>
+        <th class="xl-ch" style="min-width:85px">E</th>
+        <th class="xl-ch" style="min-width:90px">F</th>
+        <th class="xl-ch" style="min-width:130px">G</th>
+        <th class="xl-ch" style="min-width:70px">H</th>
+        <th class="xl-ch" style="min-width:185px">I</th>
+      </tr>
+      <tr>
+        <td class="xl-rh">8</td>
+        <td class="xl-c hdr">Farm Name</td>
+        <td class="xl-c hdr r">X=Yield</td>
+        <td class="xl-c hdr r">Mean</td>
+        <td class="xl-c hdr r">(X&minus;Mean)</td>
+        <td class="xl-c hdr r">(X&minus;Mean)&sup2;</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">9</td><td class="xl-c">Pearson Farm</td><td class="xl-c r">805</td>
+        <td class="xl-c sel frm r">828.0</td><td class="xl-c r">&minus;23.0</td><td class="xl-c r">529.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">10</td><td class="xl-c">Miller Farm</td><td class="xl-c r">780</td>
+        <td class="xl-c frm r">828.0</td><td class="xl-c r">&minus;48.0</td><td class="xl-c r">2,304.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">11</td><td class="xl-c">Garcia Farm</td><td class="xl-c r">780</td>
+        <td class="xl-c frm r">828.0</td><td class="xl-c r">&minus;48.0</td><td class="xl-c r">2,304.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">12</td><td class="xl-c">Johnson Farm</td><td class="xl-c r">850</td>
+        <td class="xl-c frm r">828.0</td><td class="xl-c r">22.0</td><td class="xl-c r">484.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">13</td><td class="xl-c">Davis Farm</td><td class="xl-c r">840</td>
+        <td class="xl-c frm r">828.0</td><td class="xl-c r">12.0</td><td class="xl-c r">144.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">14</td><td class="xl-c">Wilson Farm</td><td class="xl-c r">860</td>
+        <td class="xl-c frm r">828.0</td><td class="xl-c r">32.0</td><td class="xl-c r">1,024.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">15</td><td class="xl-c">Martinez Farm</td><td class="xl-c r">860</td>
+        <td class="xl-c frm r">828.0</td><td class="xl-c r">32.0</td><td class="xl-c r">1,024.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">16</td><td class="xl-c">Taylor Farm</td><td class="xl-c r">810</td>
+        <td class="xl-c frm r">828.0</td><td class="xl-c r">&minus;18.0</td><td class="xl-c r">324.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">17</td><td class="xl-c">Anderson Farm</td><td class="xl-c r">867</td>
+        <td class="xl-c frm r">828.0</td><td class="xl-c r">39.0</td><td class="xl-c r">1,521.00</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr><td class="xl-rh">18</td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td></tr>
+      <tr>
+        <td class="xl-rh">19</td>
+        <td class="xl-c b">Manual Calculations:</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+        <td class="xl-c b" colspan="3">Excel Statistical Functions:</td>
+      </tr>
+      <tr>
+        <td class="xl-rh">20</td>
+        <td class="xl-c">&Sigma;X</td><td class="xl-c r">7,452</td><td class="xl-c frm">=SUM(C9:C17)</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">21</td>
+        <td class="xl-c">No of obs</td><td class="xl-c r">9</td><td class="xl-c frm">=COUNT(C9:C17)</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">22</td>
+        <td class="xl-c b" style="padding-left:30px">Mean</td>
+        <td class="xl-c out r b">828.0</td><td class="xl-c frm">=C20/C21</td>
+        <td class="xl-c"></td><td class="xl-c"></td>
+        <td class="xl-c b">Mean</td><td class="xl-c out r">828.0</td><td class="xl-c frm">=AVERAGE(C9:C17)</td>
+      </tr>
+      <tr><td class="xl-rh">23</td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td></tr>
+      <tr>
+        <td class="xl-rh">24</td>
+        <td class="xl-c">(N+1)/2</td><td class="xl-c r">5</td><td class="xl-c frm">=(C21+1)/2</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">25</td>
+        <td class="xl-c b" style="padding-left:30px">Median a/</td>
+        <td class="xl-c out r b">840</td><td class="xl-c frm">=SMALL(C9:C17,C24)</td>
+        <td class="xl-c"></td><td class="xl-c"></td>
+        <td class="xl-c b">Median b/</td><td class="xl-c out r">840.0</td><td class="xl-c frm">=MEDIAN(C9:C17)</td>
+      </tr>
+      <tr><td class="xl-rh">26</td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td></tr>
+      <tr>
+        <td class="xl-rh">27</td>
+        <td class="xl-c it" colspan="5">Because manual mode calculation involves multiple steps and is time consuming, use the Excel MODE function.</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">28</td>
+        <td class="xl-c it" colspan="5">Interpret MODE as the "most frequently occurring yield value."</td>
+        <td class="xl-c b">Mode c/</td><td class="xl-c out r">780.0</td><td class="xl-c frm">=MODE(C9:C17)</td>
+      </tr>
+      <tr><td class="xl-rh">29</td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td></tr>
+      <tr>
+        <td class="xl-rh">30</td>
+        <td class="xl-c">Max</td><td class="xl-c r">867</td><td class="xl-c frm">=MAX(C9:C17)</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">31</td>
+        <td class="xl-c">Min</td><td class="xl-c r">780</td><td class="xl-c frm">=MIN(C9:C17)</td>
+        <td class="xl-c"></td><td class="xl-c"></td>
+        <td class="xl-c it" colspan="3">A range function is not available in Excel &mdash; calculate manually.</td>
+      </tr>
+      <tr>
+        <td class="xl-rh">32</td>
+        <td class="xl-c b" style="padding-left:30px">Range</td>
+        <td class="xl-c out r b">87</td><td class="xl-c frm">=C30-C31</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr><td class="xl-rh">33</td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td></tr>
+      <tr>
+        <td class="xl-rh">34</td>
+        <td class="xl-c">&Sigma;(X&minus;Mean)</td><td class="xl-c r">0.0</td><td class="xl-c frm">=SUM(E9:E17)</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">35</td>
+        <td class="xl-c">&Sigma;(X&minus;Mean)&sup2;</td><td class="xl-c r">9,658.0</td><td class="xl-c frm">=SUM(F9:F17)</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">36</td>
+        <td class="xl-c">No of obs</td><td class="xl-c r">9</td><td class="xl-c frm">=COUNT(F9:F17)</td>
+        <td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td><td class="xl-c"></td>
+      </tr>
+      <tr>
+        <td class="xl-rh">37</td>
+        <td class="xl-c b" style="padding-left:30px">Variance_Pop</td>
+        <td class="xl-c out r b">1,073.11</td><td class="xl-c frm">=C35/C36</td>
+        <td class="xl-c"></td><td class="xl-c"></td>
+        <td class="xl-c b">VARP</td><td class="xl-c out r">1,073.11</td><td class="xl-c frm">=VARP(C9:C17)</td>
+      </tr>
+      <tr>
+        <td class="xl-rh">38</td>
+        <td class="xl-c b" style="padding-left:30px">Std Dev_Pop</td>
+        <td class="xl-c out r b">32.76</td><td class="xl-c frm">=C37^0.5</td>
+        <td class="xl-c"></td><td class="xl-c"></td>
+        <td class="xl-c b">STDEVP</td><td class="xl-c out r">32.76</td><td class="xl-c frm">=STDEVP(C9:C17)</td>
+      </tr>
+      <tr>
+        <td class="xl-rh">39</td>
+        <td class="xl-c b" style="padding-left:30px">Variance_Sample</td>
+        <td class="xl-c out r b">1,207.25</td><td class="xl-c frm">=C35/(C36-1)</td>
+        <td class="xl-c"></td><td class="xl-c"></td>
+        <td class="xl-c b">VAR</td><td class="xl-c out r">1,207.25</td><td class="xl-c frm">=VAR(C9:C17)</td>
+      </tr>
+      <tr>
+        <td class="xl-rh">40</td>
+        <td class="xl-c b" style="padding-left:30px">Std Dev_Sample</td>
+        <td class="xl-c out r b">34.75</td><td class="xl-c frm">=C39^0.5</td>
+        <td class="xl-c"></td><td class="xl-c"></td>
+        <td class="xl-c b">STDEV</td><td class="xl-c out r">34.75</td><td class="xl-c frm">=STDEV(C9:C17)</td>
+      </tr>
+    </table>
+  </div>
+  <div class="xl-caption">Column D uses =AVERAGE($C$9:$C$17) with absolute references — drag down and the mean stays fixed. Column E computes =C9-D9 (deviation from mean); Column F computes =E9^2 (squared deviation). Manual steps on the left and Excel functions on the right produce identical answers. Use Excel functions for speed; trace through the manual steps once to understand where the numbers come from.</div>
+</div>
+```
+
+**Key takeaways from this example:**
+
+- **&Sigma;(X &minus; x̄) = 0 always** — positive and negative deviations cancel out exactly. This is why we must square the deviations before summing.
+- **Sample vs. population**: divide by (n &minus; 1) for sample data (surveys, experiments). In Excel use `STDEV.S` and `VAR.S`, or the older `STDEV` and `VAR`.
+- **Mode = 780**: Miller Farm and Garcia Farm both reported 780 lbs/acre (Wilson and Martinez tied at 860, but Excel MODE returns the first repeated value encountered in the range).
+- The **Descriptive Statistics ToolPak** above produces all of these at once — but this step-by-step layout shows exactly where each number comes from.
+
 ### Five-Number Summary and Box Plots
 
 1. Compute MIN, Q1, Median, Q3, MAX using `QUARTILE.INC(data, 0/1/2/3/4)`.
