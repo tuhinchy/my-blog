@@ -59,6 +59,40 @@ toc-depth: 2
 
 Good statistics starts with good data. Before any analysis, you need to know where your data came from, how it was collected, and whether it is representative of the population you care about. In agricultural economics, this means understanding farm surveys, USDA datasets, and sampling designs for crop yield studies.
 
+### The Process of Statistics
+
+Every statistical study follows four steps:
+
+1. **Identify the research objective** — What question are you answering? *(Example: "What is the mean cotton yield on Lubbock County farms this season?")*
+2. **Collect data** — Design a study and gather observations from a sample of the population.
+3. **Organize and summarize** — Build frequency tables, compute averages, and draw graphs (Chapters 2–3).
+4. **Draw conclusions** — Use inferential methods to generalize from the sample to the population (Chapters 8–11).
+
+A **population** is the complete set of all individuals of interest. A **sample** is the subset actually observed. Because studying an entire population is usually impractical, we study a sample and use statistics to make inferences about the population.
+
+### Types of Variables
+
+Before collecting data, identify the type of variable — this determines which formulas and graphs apply.
+
+| Variable | Type | Discrete or Continuous |
+|----------|------|------------------------|
+| Crop type (Cotton, Corn, Sorghum) | Qualitative | — (no arithmetic) |
+| Number of farms in a county | Quantitative | Discrete (counted) |
+| Cotton yield (lbs/acre) | Quantitative | Continuous (measured) |
+| Farm size (Small / Medium / Large) | Qualitative | — (no arithmetic) |
+| Daily temperature (°F) | Quantitative | Continuous (measured) |
+
+**Rule of thumb**: if you *count* to get the value → **discrete**; if you *measure* → **continuous**.
+
+### Sampling Methods
+
+| Method | How it works | When to use |
+|--------|-------------|-------------|
+| **Simple random** | Every individual has an equal chance of selection | General surveys with a complete list (frame) |
+| **Stratified** | Divide population into groups (strata); sample randomly within each | When subgroups (farm sizes, crop types) differ from one another |
+| **Systematic** | Select every k-th individual; k = N/n | When a frame exists and ordering is random |
+| **Cluster** | Randomly select groups (clusters); survey all members | When travel cost is high and clusters resemble the full population |
+
 ### Key Excel Skills
 
 | Task | Excel Tool / Function |
@@ -125,6 +159,38 @@ Using `RAND()` without freezing the value means your sample changes every time E
 ### What This Chapter Is About
 
 Raw numbers are hard to interpret. Frequency distributions, bar charts, and histograms compress hundreds of observations into patterns you can communicate and act on.
+
+### Frequency Distributions
+
+A **frequency distribution table** organizes data into categories (qualitative) or equal-width intervals (quantitative) and counts how many observations fall in each group.
+
+**Relative frequency** converts raw counts into proportions so you can compare distributions of different sizes:
+
+$$\text{Relative frequency} = \frac{\text{frequency (count in class)}}{\sum \text{all frequencies}} = \frac{f}{\sum f}$$
+
+*Example*: If 28 of 80 farms grow Cotton, the relative frequency = 28/80 = **0.35** (35%).
+
+The sum of all relative frequencies must equal exactly **1** (or 100%).
+
+**Terms for grouped quantitative data:**
+
+| Term | Definition |
+|------|-----------|
+| **Class** | An interval of values (e.g., 800–900 lbs/acre) |
+| **Lower class limit** | Smallest value belonging to the class |
+| **Upper class limit** | Largest value belonging to the class |
+| **Class width** | Lower limit of next class − lower limit of this class |
+| **Class midpoint** | (Lower limit + Upper limit) / 2 — represents the class in calculations |
+| **Cumulative frequency** | Running total of frequencies up through a class |
+
+### Types of Graphs
+
+| Graph | Data type | Key rule |
+|-------|-----------|----------|
+| **Bar chart** | Qualitative (categories) | Bars **do not** touch; order doesn't matter |
+| **Histogram** | Quantitative (grouped) | Bars **do** touch (no gaps); intervals are equal |
+| **Frequency polygon** | Quantitative (grouped) | Connect midpoints with line segments; close to x-axis at both ends |
+| **Stem-and-leaf** | Quantitative (raw) | Preserves original data values; quick to construct by hand |
 
 ### Key Excel Skills
 
@@ -195,6 +261,63 @@ Suppose column A has the crop type (Corn, Cotton, Sorghum, Wheat) for 80 farms.
 ### What This Chapter Is About
 
 A single number can summarize a whole distribution. This chapter covers measures of center (mean, median, mode) and spread (standard deviation, variance, IQR). Excel's *Descriptive Statistics* tool generates all of them at once.
+
+### Measures of Central Tendency
+
+**(1) Mean** — the arithmetic average; the balancing point of the data.
+
+$$\mu = \frac{\sum X_i}{N} \quad \text{(population mean, } N \text{ = population size)}$$
+
+$$\bar{x} = \frac{\sum x_i}{n} \quad \text{(sample mean, } n \text{ = sample size)}$$
+
+A key property: the sum of all deviations from the mean is always exactly zero — $\sum(x_i - \bar{x}) = 0$.
+
+**(2) Median** — the middle value when data are sorted from smallest to largest.
+
+- If *n* is **odd**: median = the value at position $\dfrac{n+1}{2}$.
+- If *n* is **even**: median = average of values at positions $\dfrac{n}{2}$ and $\dfrac{n}{2}+1$.
+
+The median is **resistant** to extreme values (outliers). Use it for skewed distributions such as income or housing prices.
+
+**(3) Mode** — the value(s) that appear most often. A dataset can be *unimodal*, *bimodal*, or have no mode.
+
+### Measures of Dispersion
+
+**(1) Range** = Largest value − Smallest value. Simple to compute but sensitive to outliers.
+
+**(2) Variance** — average squared deviation from the mean. We square the deviations so that positive and negative errors do not cancel out:
+
+$$\sigma^2 = \frac{\sum(X_i - \mu)^2}{N} \quad \text{(population variance)}$$
+
+$$s^2 = \frac{\sum(x_i - \bar{x})^2}{n-1} \quad \text{(sample variance)}$$
+
+*Why n − 1 for samples?* Dividing by n − 1 (Bessel's correction) adjusts for the fact that a sample systematically underestimates the true population spread when you use $\bar{x}$ instead of the unknown $\mu$.
+
+A computationally handy equivalent for the numerator is the **sum of squares** (SS):
+
+$$SS = \sum x_i^2 - \frac{(\sum x_i)^2}{n} \quad \Rightarrow \quad s^2 = \frac{SS}{n-1}$$
+
+**(3) Standard deviation** — square root of variance, in the same units as the original variable:
+
+$$\sigma = \sqrt{\sigma^2} \qquad s = \sqrt{s^2}$$
+
+### The Empirical Rule
+
+For a **bell-shaped (symmetric) distribution**, approximately:
+
+| Interval | % of observations |
+|----------|-------------------|
+| $\mu \pm 1\sigma$ | ~68% |
+| $\mu \pm 2\sigma$ | ~95% |
+| $\mu \pm 3\sigma$ | ~99.7% |
+
+### z-Scores
+
+A **z-score** (standardized value) tells you how many standard deviations an observation is above or below the mean:
+
+$$z = \frac{x - \mu}{\sigma} \quad \text{(population)} \qquad z = \frac{x - \bar{x}}{s} \quad \text{(sample)}$$
+
+z > 0 means the value is *above* the mean; z < 0 means *below*. Values with |z| > 3 are often considered outliers.
 
 ### Key Excel Skills
 
@@ -477,6 +600,55 @@ SD = 87.91 lbs/acre means most farms fall within ±88 lbs/acre of the mean. By t
 ### What This Chapter Is About
 
 Does more irrigation water mean higher yields? Does fertilizer price affect application rate? Scatter plots, correlation, and simple linear regression answer these questions.
+
+### Scatter Diagrams
+
+A **scatter diagram** plots each observation as a point (x, y). By convention:
+- The **independent (explanatory) variable** x goes on the horizontal axis.
+- The **dependent (response) variable** y goes on the vertical axis.
+- **Do not connect the points** — each point is a separate observation.
+
+The pattern reveals the **direction** (positive / negative / none) and **form** (linear / curved) of the association.
+
+### Linear Correlation Coefficient
+
+The **linear correlation coefficient r** measures the strength and direction of the *linear* association between two quantitative variables:
+
+$$r = \frac{\sum xy - \dfrac{(\sum x)(\sum y)}{n}}{\sqrt{\left(\sum x^2 - \dfrac{(\sum x)^2}{n}\right)\left(\sum y^2 - \dfrac{(\sum y)^2}{n}\right)}}$$
+
+**Properties of r:**
+
+| Value of r | Interpretation |
+|-----------|----------------|
+| r = +1 | Perfect positive linear association |
+| r close to +1 | Strong positive linear association |
+| r ≈ 0 | Little or no linear association |
+| r close to −1 | Strong negative linear association |
+| r = −1 | Perfect negative linear association |
+
+**Important**: r is **unitless** — it does not change if you rescale x or y. Correlation measures only *linear* association; a strong curved relationship can give r ≈ 0.
+
+### Least-Squares Regression
+
+The **least-squares regression line** $\hat{y} = b_0 + b_1 x$ minimizes the sum of the squared vertical distances (errors) between the observed values y and the predicted values ŷ.
+
+**Formulas for the coefficients:**
+
+$$b_1 = \frac{\sum xy - n\bar{x}\bar{y}}{\sum x^2 - n(\bar{x})^2} \quad \text{(slope)}$$
+
+$$b_0 = \bar{y} - b_1\bar{x} \quad \text{(intercept)}$$
+
+**Interpretation:**
+- **b₁ (slope)**: for each 1-unit increase in x, the predicted y changes by b₁ units (on average).
+- **b₀ (intercept)**: predicted y when x = 0. This is meaningful only if x = 0 is within (or close to) the observed range of the data.
+
+### Coefficient of Determination
+
+$$R^2 = r^2 = \frac{\text{Explained variation in } y}{\text{Total variation in } y}$$
+
+R² is the proportion of the total variation in y that is accounted for by the linear relationship with x. For example, R² = 0.87 means 87% of the variation in yield is explained by irrigation water; the remaining 13% is due to other factors (soil quality, weather, etc.).
+
+**Scope of the model**: use the regression line to predict y only for x-values within (or very close to) the range of observed x. Extrapolating far beyond the data is unreliable because the linear relationship may not continue.
 
 ### Key Excel Skills
 
